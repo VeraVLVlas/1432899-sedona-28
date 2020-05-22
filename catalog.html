@@ -26,7 +26,55 @@
  <main>
   <section>
    <h1 class="visually-hidden">Подбор отеля</h1>
-    <!-- Здесь будет форма подбора отеля -->
+   <div class="form">
+    <form action="https://echo.htmlacademy.ru" method="get">
+	 <fieldset>
+	  <legend>Инфраструктура:</legend>
+	   <ul>
+	    <li>
+	     <label for="pool">Бассейн</label>
+		 <input type="checkbox" name="pool-amenities" id="pool" checked >
+	    </li>
+		<li>
+		 <label for="parking">Парковка</label>
+		 <input type="checkbox" name="parking-amenities" id="parking">
+		</li>
+		<li>
+		 <label for="internet">Wi-fi</label>
+		 <input type="checkbox" name="wi-fi" id="internet">
+		</li>
+	   </ul>
+	 </fieldset>
+	 <fieldset>
+	  <legend>Тип жилья:</legend>
+	   <ul>
+	    <li>
+	     <label for="hotel">Гостиница</label>
+		 <input type="checkbox" name="type-hotel" id="hotel" checked >
+	    </li>
+		<li>
+		 <label for="motel">Мотель</label>
+		 <input type="checkbox" name="type-motel" id="motel" checked>
+		</li>
+		<li>
+		 <label for="apartments">Апартаменты</label>
+		 <input type="checkbox" name="type-apartments" id="apartments" checked>
+		</li>
+	   </ul>
+	 </fieldset>
+	 <fieldset>
+	  <legend>Стоимость в сутки (р):</legend>
+	   <table> 
+	    <tr>
+		 <th>От 0</th>
+		 <th>До 3000</th>
+		</tr>
+	   </table>
+	   <input type="range" name="cost" id="cost" min="0" max="3000" step="1">
+	 </fieldset>
+	 <button type="submit">Показать</button>
+	</form>
+   </div>
 	<div>
 	 <h3>Найдено:3</h3>
 	</div>
@@ -38,7 +86,7 @@
 	 <li><a href="#">по типу</a></li>
 	 <li><a href="#">по рейтингу</a></li>
 	 <li>
-	 <span class="pointer-up">
+	 <span class="pointer-up"> <!-- Добавила для себя (где что за чем идет ) при стилизации уберу  -->
 	  <a href="#" aria-label="фильтр по возрастанию">Вверх
 	 <!-- Заданный указатель в CSS-->
 	  </a>
