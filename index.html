@@ -26,7 +26,7 @@
   -->
   
   <div class="inscription">
-   <img src="img/welcome.svg" width="456.65" height="351.24" alt="Добро пожаловать в Седону">
+   <img src="img/welcome.svg" width="456" height="351" alt="Добро пожаловать в Седону">
   </div>
   
   <!--
@@ -36,9 +36,9 @@
    
  </header>
  <main>
-  <h1>Седона</h1>
+  <h1 class="visually-hidden">Седона</h1>
   <section>
-   <h2>Преимущества Седоны</h2>
+   <h2 class="visually-hidden">Преимущества Седоны</h2>
    <div class="advantages">
     <h3>Седона - небольшой городок в Аризоне,
 	заслуживающий большего!
@@ -113,7 +113,25 @@
    </div>
   </section>
    
-   <!-- Здесь будет форма с кнопкой "найти"-->
+   <form action="https://echo.htmlacademy.ru" method="post"> 
+    <p>
+	 <label for="check-in">Дата заезда: </label>
+	 <input type="text" id="check-in" name="arrival-date" placeholder="24 апреля 2017">
+	</p>
+	<p>
+	 <label for="check-out">Дата выезда: </label>
+	 <input type="text" id="check-out" name="date-of-departure" placeholder="4 июля 2017">
+	</p>
+	<p>
+	<label for="adults">Взрослые: </label>
+	<input type="number" min="1" max="50" step="1" id="adults" name="number-of-adults" placeholder="2">
+	</p>
+	<p>
+	 <label for="children">Дети: </label>
+	<input type="number" min="1" max="50" step="1" id="children" name="amount-of-children" placeholder="0">
+	</p>
+	<button type="submit">Найти</button>
+   </form>
    
   </main>
   
@@ -126,9 +144,9 @@
 	<p><a href="tel:+7(495)666-02-66">тел:+7(495)666-02-66</a></p>
    </div>
    <ul>
-    <li><a href="#">Twitter</a></li>
-	<li><a href="#">Facebook</a></li>
-	<li><a href="#">YouTube</a></li>
+    <li><a href="#" aria-label="Twitter">Twitter</a></li>
+	<li><a href="#" aria-label="Facebook">Facebook</a></li>
+	<li><a href="#" aria-label="YouTube">YouTube</a></li>
    </ul>
    <div class="partner">
     <span>website by</span>
