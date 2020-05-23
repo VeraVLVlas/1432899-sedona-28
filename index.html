@@ -109,7 +109,7 @@
    <h2>Заинтересовались?</h2>
    <p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
    <div class="button">
-    <button>Поиск гостиницы в Седоне</button>
+    <button type="button">Поиск гостиницы в Седоне</button>
    </div>
   </section>
    
@@ -117,18 +117,24 @@
     <p>
 	 <label for="check-in">Дата заезда: </label>
 	 <input type="text" id="check-in" name="arrival-date" placeholder="24 апреля 2017">
+	 <button type="button">Календарь</button>
 	</p>
 	<p>
 	 <label for="check-out">Дата выезда: </label>
 	 <input type="text" id="check-out" name="date-of-departure" placeholder="4 июля 2017">
+	 <button type="button">Календарь</button>
 	</p>
 	<p>
 	<label for="adults">Взрослые: </label>
+	<button type="button" aria-label="уменьшить">-</button>
 	<input type="number" min="1" max="50" step="1" id="adults" name="number-of-adults" placeholder="2">
+	<button type="button" aria-label="добавить">+</button>
 	</p>
 	<p>
 	 <label for="children">Дети: </label>
+	 <button type="button" aria-label="уменьшить">-</button>
 	<input type="number" min="1" max="50" step="1" id="children" name="amount-of-children" placeholder="0">
+	<button type="button" aria-label="добавить">+</button>
 	</p>
 	<button type="submit">Найти</button>
    </form>
