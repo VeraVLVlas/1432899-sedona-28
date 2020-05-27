@@ -3,36 +3,34 @@
 <head>
  <meta charset="utf-8">
  <title>Sedona</title>
+ <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+ <link href="normalize.css" rel="stylesheet">
+ <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
- <header>
-  <nav>
-   <ul>
-    <li><a href="#">Информация</a></li>
-    <li><a href="#">Фото и видео</a></li>
-    <li><a href="#">Карта штата</a></li>
-    <li><a href="catalog.html">Гостиницы</a></li>
-   </ul>
-   <div class="logo">
-   <img src="img/logo.svg" height="70" width="138" alt="Логотип города Седона">
+ <header class="top-of-page">
+  <nav class="site-navigation">
+   <div class="field">
+    <ul class="navigation-field working">
+     <li><a href="#">Информация</a></li>
+     <li><a href="#">Фото и видео</a></li>
+     <li><a href="#">Карта штата</a></li>
+     <li><a href="catalog.html">Гостиницы</a></li>
+    </ul>
+    <div class="logo">
+    <img src="img/logo.svg" height="70" width="138" alt="Логотип города Седона">
+   </div>
   </div>
   </nav>
   
-  <!-- <div class="photo-sedona"> 
-     Здесь будет фото Седоны, заданное в CSS через b-i 
-  </div>
-  -->
-  
-  <div class="inscription">
+  <div class="photo-sedona"> 
+  <div class="inscription">      <!--как поставить изображение по середине  -->
    <img src="img/welcome.svg" width="456" height="351" alt="Добро пожаловать в Седону">
   </div>
-  
-  <!--
-  <div class="visor">
-    Здесь будет белый козырек, заданный в CSS через b-i 
-  </div> -->
+  </div>
+ 
    
  </header>
  <main>
@@ -40,15 +38,15 @@
   <section>
    <h2 class="visually-hidden">Преимущества Седоны</h2>
    <div class="advantages">
-    <h3>Седона - небольшой городок в Аризоне,
+    <h3 class="introduction">Седона - небольшой городок в Аризоне,
 	заслуживающий большего!
 	</h3>
-	<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+	<p class="description-sedona">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
    </div>
   </section>
   
   <div class="real city">
-   <ul>
+   <ul class="navigation-field">
     <li>
 	 <div class="list">
 	  <h3>Настоящий городок</h3>
@@ -105,59 +103,65 @@
    </ul>
   </div>
   
-  <section>
-   <h2>Заинтересовались?</h2>
-   <p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-   <div class="button">
-    <button type="button">Поиск гостиницы в Седоне</button>
+  <section class="advantages">
+   <h2 class="interest">Заинтересовались?</h2>
+   <p class="reserv">Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+   <div>
+    <button type="button" class="button search"><span>Поиск гостиницы в Седоне</span></button>
    </div>
   </section>
    
-   <form action="https://echo.htmlacademy.ru" method="post"> 
+  
+   <form action="https://echo.htmlacademy.ru" method="post" class="form"> 
     <p>
 	 <label for="check-in">Дата заезда: </label>
-	 <input type="text" id="check-in" name="arrival-date" placeholder="24 апреля 2017">
-	 <button type="button">Календарь</button>
+	 <input type="text" class="cell" id="check-in" name="arrival-date" placeholder="24 апреля 2017">
+	 <button type="button" class="button element">Календарь</button>
 	</p>
 	<p>
 	 <label for="check-out">Дата выезда: </label>
-	 <input type="text" id="check-out" name="date-of-departure" placeholder="4 июля 2017">
-	 <button type="button">Календарь</button>
+	 <input type="text" class="cell" id="check-out" name="date-of-departure" placeholder="4 июля 2017">
+	 <button type="button" class="button element">Календарь</button>
 	</p>
 	<p>
 	<label for="adults">Взрослые: </label>
-	<button type="button" aria-label="уменьшить">-</button>
-	<input type="number" min="1" max="50" step="1" id="adults" name="number-of-adults" placeholder="2">
-	<button type="button" aria-label="добавить">+</button>
+	<button type="button" class="button element" aria-label="уменьшить">-</button>
+	<input type="text" class="cell" min="1" max="50" step="1" id="adults" name="number-of-adults" placeholder="2">
+	<button type="button" class="button element" aria-label="добавить">+</button>
 	</p>
 	<p>
 	 <label for="children">Дети: </label>
-	 <button type="button" aria-label="уменьшить">-</button>
-	<input type="number" min="1" max="50" step="1" id="children" name="amount-of-children" placeholder="0">
-	<button type="button" aria-label="добавить">+</button>
+	 <button type="button" class="button element" aria-label="уменьшить">-</button>
+	<input type="text" class="cell" min="1" max="50" step="1" id="children" name="amount-of-children" placeholder="0">
+	<button type="button" class="button element" aria-label="добавить">+</button>
 	</p>
-	<button type="submit">Найти</button>
+	<button type="submit" class="button to-find"><span>Найти</span></button>
    </form>
    
   </main>
   
-  <footer>
-   <section>
+  <footer> <!-- как задавать цвет подвалу -->
+   <section> <!--карта отображается не по всей ширине экрана-->
     <img src="img/map.png" width="1199" height="594" alt="Карта с геолокацией города Седона" >
    </section>
+   
    <div class="contacts">
     <p>#visitsedona</p>
-	<p><a href="tel:+7(495)666-02-66">тел:+7(495)666-02-66</a></p>
+	<p><a href="tel:+7(495)666-02-66" class="tel">тел:+7(495)666-02-66</a></p>
    </div>
-   <ul>  <!-- Добавила для себя (где что за чем идет ) при стилизации уберу,  -->
-    <li><a href="#" aria-label="Twitter">Twitter</a></li>    
-	<li><a href="#" aria-label="Facebook">Facebook</a></li>   
-	<li><a href="#" aria-label="YouTube">YouTube</a></li>    
+   
+   <ul class="navigation-field">  <!-- Добавила для себя (где что за чем идет ) при стилизации уберу,  -->
+   
+    <li> <!--  беда с кнопками соц.сетей, если скрыть надпись то исчезает цвет и изображение -->
+	 <a href="#" class="twit social-networks" aria-label="Twitter"><span>Twitter</span></a></li>    
+	<li><a href="#" class="vk social-networks" aria-label="Facebook"><span>Facebook</span></a></li>   
+	<li><a href="#" class="youtube social-networks" aria-label="YouTube"><span>YouTube</span></a></li>    
    </ul>
+   
    <div class="partner">
     <span>website by</span>
-	<span>
-	 <a href="https://htmlacademy.ru/intensive/htmlcss">
+	<span> <!--картинка академии, не меняет цвета  -->
+	 <a href="https://htmlacademy.ru/intensive/htmlcss" class="active-button">
 	  <img src="img/htmlacademy.svg" width="115" height="41" alt="Логотип HTML academy ">
 	 </a>
 	</span>
