@@ -49,57 +49,75 @@
    <ul class="navigation-field">
     <li>
 	 <div class="list">
-	  <h3>Настоящий городок</h3>
-	  <span>-№1-</span>
-	  <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+	  <h3 class="insertion">Настоящий городок</h3>
+	  <div class="insert-description">
+	   <span>-№1-</span>
+	   <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+	  </div>
 	 </div>
 	 <div>
 	  <img src="img/state.jpg" height="256" width="800" alt="Фото городка">
 	 </div>
 	 <div class="housing-description">
-	  <h3>Жильё</h3>
-	  <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+	  <h3 class="continuation">Жильё</h3>
+	  <div class="sentence">
+	   <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+	  </div>
 	 </div>
-	 <div class="food description">
-	  <h3>Еда</h3>
-	  <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+	 <div class="food-description">
+	  <h3 class="continuation">Еда</h3>
+	  <div class="sentence">
+	   <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+	  </div>
 	 </div>
 	 <div class="souvenir">
-	  <h3>Сувениры</h3>
-	  <p>Не только китайского, но и местного производства!</p>
+	  <h3 class="continuation">Сувениры</h3>
+	  <div class="sentence">
+	   <p>Не только китайского, но и местного производства!</p>
+	  </div>
 	 </div>
 	</li>
 	<li>
 	 <div>
 	  <img src="img/bridge.jpg" height="256" width="800" alt="Фото мост Дьявола">
 	 </div>
-	 <div>
-	  <h3>Там есть мост Дьявола</h3>
-	  <span>-№2-</span>
-	  <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
+	 <div class="list">
+	  <h3 class="insertion">Там есть мост Дьявола</h3>
+	  <div class="insert-description">
+	   <span>-№2-</span>
+	   <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
+	  </div>
 	 </div>
 	</li>
-	<li>
+	<div>
+	<li class="gray-background">
 	 <div>
-	  <h3>Небольшая площадь</h3>
-	  <span>-№3-</span>
-	  <p>Все достопримечательности находятся очень близко</p>
+	  <h3 class="continuation">Небольшая площадь</h3>
+	  <div class="sentence">
+	   <span>-№3-</span>
+	   <p>Все достопримечательности находятся очень близко</p>
+	  </div>
 	 </div>
 	</li>
-	<li>
+	<li class="gray-background">
 	 <div>
-	  <h3>Красивая дорога</h3>
-	  <span>-№4-</span>
-	  <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+	  <h3 class="continuation">Красивая дорога</h3>
+	  <div class="sentence">
+	   <span>-№4-</span>
+	   <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+	   </div>
 	 </div>
 	</li>
-	<li>
+	<li class="gray-background">
 	 <div>
-	  <h3>Мало туристов</h3>
-	  <span>-№5-</span>
-	  <p>Большинство едет в Гранд Каньон и толпится там</p>
+	  <h3 class="continuation">Мало туристов</h3>
+	  <div class="sentence">
+	   <span>-№5-</span>
+	   <p>Большинство едет в Гранд Каньон и толпится там</p>
+	  </div>
 	 </div>
 	</li>
+	</div>
    </ul>
   </div>
   
@@ -112,28 +130,28 @@
   </section>
    
   
-   <form action="https://echo.htmlacademy.ru" method="post" class="form"> 
+   <form action="https://echo.htmlacademy.ru" method="post" class="form">  <!--как вынести ее на середину -->
     <p>
 	 <label for="check-in">Дата заезда: </label>
-	 <input type="text" class="cell" id="check-in" name="arrival-date" placeholder="24 апреля 2017">
-	 <button type="button" class="button element">Календарь</button>
+	 <input type="text" class="cell cell-big" id="check-in" name="arrival-date" placeholder="24 апреля 2017">
+	 <button type="button" class="button-element"aria-label="календарь"></button>
 	</p>
 	<p>
 	 <label for="check-out">Дата выезда: </label>
-	 <input type="text" class="cell" id="check-out" name="date-of-departure" placeholder="4 июля 2017">
-	 <button type="button" class="button element">Календарь</button>
+	 <input type="text" class="cell cell-big" id="check-out" name="date-of-departure" placeholder="4 июля 2017">
+	 <button type="button" class="button-element" aria-label="календарь"></button>
 	</p>
 	<p>
 	<label for="adults">Взрослые: </label>
-	<button type="button" class="button element" aria-label="уменьшить">-</button>
-	<input type="text" class="cell" min="1" max="50" step="1" id="adults" name="number-of-adults" placeholder="2">
-	<button type="button" class="button element" aria-label="добавить">+</button>
+	<button type="button" class="minus-button" aria-label="уменьшить"></button>
+	<input type="text" class="cell cell-little" min="1" max="50" step="1" id="adults" name="number-of-adults" placeholder="2">
+	<button type="button" class="plus-button" aria-label="добавить"></button>
 	</p>
 	<p>
 	 <label for="children">Дети: </label>
-	 <button type="button" class="button element" aria-label="уменьшить">-</button>
-	<input type="text" class="cell" min="1" max="50" step="1" id="children" name="amount-of-children" placeholder="0">
-	<button type="button" class="button element" aria-label="добавить">+</button>
+	 <button type="button" class="minus-button" aria-label="уменьшить"><span class="visually-hidden">-</span></button>
+	<input type="text" class="cell cell-little" min="1" max="50" step="1" id="children" name="amount-of-children" placeholder="0">
+	<button type="button" class="plus-button" aria-label="добавить"></button>
 	</p>
 	<button type="submit" class="button to-find"><span>Найти</span></button>
    </form>
@@ -150,12 +168,11 @@
 	<p><a href="tel:+7(495)666-02-66" class="tel">тел:+7(495)666-02-66</a></p>
    </div>
    
-   <ul class="navigation-field">  <!-- Добавила для себя (где что за чем идет ) при стилизации уберу,  -->
-   
-    <li> <!--  беда с кнопками соц.сетей, если скрыть надпись то исчезает цвет и изображение -->
-	 <a href="#" class="twit social-networks" aria-label="Twitter"><span>Twitter</span></a></li>    
-	<li><a href="#" class="vk social-networks" aria-label="Facebook"><span>Facebook</span></a></li>   
-	<li><a href="#" class="youtube social-networks" aria-label="YouTube"><span>YouTube</span></a></li>    
+   <ul class="navigation-field connection">  
+    <li class="social-networks"> <!--  беда с кнопками соц.сетей, пляшет размер самих кнопок -->
+	 <a href="#" class="twit" aria-label="Twitter"></a></li>    
+	<li class="social-networks"><a href="#" class="fb social-networks" aria-label="Facebook"></a></li>   
+	<li class="social-networks"><a href="#" class="youtube social-networks" aria-label="YouTube"></a></li>    
    </ul>
    
    <div class="partner">

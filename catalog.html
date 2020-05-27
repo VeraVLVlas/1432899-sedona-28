@@ -31,10 +31,10 @@
  <main>
   <section>
    <h1 class="visually-hidden">Подбор отеля</h1>
-   <div class="form">
+   <div class="form blurred-background">
     <form action="https://echo.htmlacademy.ru" method="get">
-	 <fieldset>
-	  <legend>Инфраструктура:</legend>
+	 <fieldset class="field">
+	  <legend class="filtration">Инфраструктура:</legend>
 	   <ul class="navigation-field">
 	    <li>
 	     <label for="pool">Бассейн</label>
@@ -50,8 +50,8 @@
 		</li>
 	   </ul>
 	 </fieldset>
-	 <fieldset>
-	  <legend>Тип жилья:</legend>
+	 <fieldset class="field">
+	  <legend class="filtration">Тип жилья:</legend>
 	   <ul class="navigation-field">
 	    <li>
 	     <label for="hotel">Гостиница</label>
@@ -67,8 +67,8 @@
 		</li>
 	   </ul>
 	 </fieldset>
-	 <fieldset>
-	  <legend>Стоимость в сутки (р):</legend>
+	 <fieldset class="field">
+	  <legend class="filtration">Стоимость в сутки (р):</legend>
 	   <input type="text" name="quantity" value="От 0">
 	   <input type="text" name="quantity" value="До 3000">
 	   <input type="range" name="cost" min="0" max="3000" step="1">
@@ -104,7 +104,7 @@
   </section>
   <section>
    <ul class="navigation-field hotel">
-    <li class="starf">  <!-- 4 звезды, почему они стоят в одном месте, а не у каждого ли -->
+    <li class="starf">  <!-- 4 звезды, почему они стоят в одном месте, а не у каждого ли, и как растянуть картинку по форме -->
 	 <div class="photo-amara">
 	  <img src="img/amara.jpg" height="90" width="135" alt="Фото отеля Amara Resort&spa">
 	 </div>
@@ -129,9 +129,6 @@
 	 </div>
 	 <div class="description">
 	  <a href="#"><h3>Desert Quail Inn</h3></a>
-	  <span>
-	   <img src="placeholder.img" height="50" width="50" alt="три звезды">
-	  </span>
 	 </div>
 	 
 	 <div class="cost">
@@ -153,9 +150,6 @@
 	 </div>
 	 <div class="description star">
 	  <a href="#"><h3>Villas at Poco Diablo</h3></a>
-	  <span>
-	   <img src="placeholder.img" height="50" width="50" alt="две звезды">
-	  </span>
 	 </div>
 	 <div class="cost">
 	  <span>Апартаменты</span>
@@ -178,10 +172,11 @@
     <p>#visitsedona</p>
 	<p><a href="tel:+7(495)666-02-66" class="tel">тел:+7(495)666-02-66</a></p>
    </div>
-   <ul class="navigation-field">
-    <li><a href="#" aria-label="Twitter">Twitter</a></li>
-	<li><a href="#" aria-label="Facebook">Facebook</a></li>
-	<li><a href="#" aria-label="YouTube">YouTube</a></li>
+   <ul class="navigation-field connection">  
+    <li class="social-networks"> <!--  беда с кнопками соц.сетей, по центру и цвет при наведении-->
+	 <a href="#" class="twit" aria-label="Twitter"></a></li>    
+	<li class="social-networks"><a href="#" class="fb social-networks" aria-label="Facebook"></a></li>   
+	<li class="social-networks"><a href="#" class="youtube social-networks" aria-label="YouTube"></a></li>    
    </ul>
    <div class="partner">
     <span>website by</span>

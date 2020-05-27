@@ -4,6 +4,7 @@
  --basic-black: #000000; 
  
  --special:#A9A9A9;
+ --gray-frame:#EEEEEE;
  --cloud-gray:#EBEBEB;
  --gray-frame:#E5E5E5;
  
@@ -50,12 +51,13 @@ img {
  height: 509px;
 }
 
-.photo-sedona::after{
+.inscription::after{ /* белый козырек не вытягивается по картинке */
  content:"";
  background-image: url('../img/visor.png');
  position: absolute;
  background-repeat: no-repeat;
- width: 100%;
+ background-size: 100%;
+ width: 1200px;
  height: 57px;
  bottom:-60px;
 
@@ -157,7 +159,7 @@ color:var(--baslight-blue);
   padding-left:15px;
 }
 
-.starf::after {
+.starf::after { /* 4 звезды*/
  content:"";
  background-image:url('../img/star.svg');
  background-repeat:repeat-x;
@@ -169,7 +171,7 @@ color:var(--baslight-blue);
  
 }
 
-.stars::after {
+.stars::after {  /* 3 звезды*/
  content:"";
  background-image:url('../img/star.svg');
  background-repeat:repeat-x;
@@ -181,7 +183,7 @@ color:var(--baslight-blue);
  
 }
 
-.start::after {
+.start::after {  /* 2 звезды*/
  content:"";
  background-image:url('../img/star.svg');
  background-repeat:repeat-x;
@@ -193,7 +195,6 @@ color:var(--baslight-blue);
  
 }
 
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -203,6 +204,70 @@ color:var(--baslight-blue);
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.list {
+ background-color:var(--baslight-blue);
+ width: 400px;
+ height: 256px;
+}
+
+.insertion {
+ color:var( --basic-white);
+ font-size: 21px;
+ line-height: 21px;
+ text-align: center;
+}
+
+.insert-description {
+ color:var( --basic-white);
+ text-align: center;
+ font-weight: normal;
+}
+
+.continuation {
+ font-size: 21px;
+ line-height: 21px;
+ text-align: center;
+}
+
+.sentence {
+ color:var(--basic-dark-grey);
+ font-weight: normal;
+ text-align: center;
+}
+
+.housing-description::before {
+ content:"";
+ background-image:url('../img/icon-1.svg');
+ background-repeat:no-repeat;
+ position:absolute;
+ width:75px;
+ height:72px;
+}
+
+.food-description::before{
+ content:"";
+ background-image:url('../img/icon-3.svg');
+ background-repeat:no-repeat;
+ position:absolute;
+ width: 75px;
+ height: 70px;
+}
+
+.souvenir::before {
+ content:"";
+ background-image:url('../img/icon-2.svg');
+ background-repeat:no-repeat;
+ position:absolute;
+ width: 64px;
+ height: 77px;
+}
+
+.gray-background {
+ background-color:var(--gray-frame);
+ width: 1200px;
+ height: 256px;
 }
 
 .advantages {
@@ -249,6 +314,93 @@ color:var(--baslight-blue);
 
 }
 
+.button-element {
+ background-image:url('../img/calendar.svg');
+ background-repeat:no-repeat;
+ background-color:transparent;
+ border:none;
+ width: 21px;
+ height: 23px;
+ padding:15px;
+}
+
+.button-element:hover,
+.button-element:focus {
+ background-image:url('../img/calendar-black.svg');
+ background-repeat:no-repeat;
+ background-color:transparent;
+ border:none;
+ width: 21px;
+ height: 23px;
+ padding:15px;
+}
+
+.button-element:active {
+ background-image:url('../img/calendar-blue.svg');
+ background-repeat:no-repeat;
+ background-color:transparent;
+ border:none;
+ width: 21px;
+ height: 23px;
+ padding:15px;
+}
+
+.minus-button {
+ background-image:url('../img/rectangle.svg');
+ background-repeat:no-repeat;
+ background-color:transparent;
+ border:none;
+ width:12px;
+ height:3px;
+ padding:10px;
+}
+
+.minus-button:hover,
+.minus-button:focus {
+ background-image:url('../img/minus-black.svg');
+ background-repeat:no-repeat;
+ background-color:transparent;
+ border:none;
+ width:12px;
+ height:3px;
+ padding:10px;
+}
+
+.minus-button:active {
+ background-image:url('../img/minus-blue.svg');
+ background-repeat:no-repeat;
+ background-color:transparent;
+ border:none;
+ width:12px;
+ height:3px;
+ padding:10px;
+}
+
+.plus-button {
+  background-image:url('../img/union.svg');
+  background-repeat:no-repeat;
+  background-color:transparent;
+  border:none;
+  padding:10px;
+}
+
+.plus-button:hover,
+.plus-button:focus {
+  background-image:url('../img/plus-black.svg');
+  background-repeat:no-repeat;
+  background-color:transparent;
+  border:none;
+  padding:10px;
+}
+
+.plus-button:active {
+  background-image:url('../img/plus-blue.svg');
+  background-repeat:no-repeat;
+  background-color:transparent;
+  border:none;
+  padding:10px;
+}
+
 .search {
  font-size: 21px;
  line-height: 26px;
@@ -276,6 +428,16 @@ color:var(--baslight-blue);
  border: none;
 }
 
+.cell-big {
+ width: 346px;
+ height: 38px;
+}
+
+.cell-little {
+ width: 114px;
+ height: 38px;
+}
+
 .cell:hover {
  background-color:var(--cloud-gray);
 }
@@ -287,7 +449,6 @@ color:var(--baslight-blue);
 
 .element {
  color:var(--special);
-
 }
 
 .element:hover,
@@ -321,6 +482,25 @@ color:var(--baslight-blue);
  opacity: 0.3;
 }
 
+.blurred-background {
+ background-image: url('../img/diffuse.jpg');
+ background-repeat: no-repeat;
+ background-size:100%;
+ width: 1200px;
+ height: 217px;
+}
+
+.field {
+ border:none;
+ background:none;
+}
+
+.filtration {
+ color:var(--basic-white);
+ font-size: 16px;
+ line-height: 21px;
+}
+
 .contacts {
  font-size: 21px;
  line-height: 26px;
@@ -330,43 +510,65 @@ color:var(--baslight-blue);
  color:var( --basic-black);
 }
 
-.social-networks {
+.connection a{
  background-color:var(--dark-blue);
  width:46px;
  height:48px;
 }
  
-.twit {
- background-image: url('../img/twitter.svg');
- background-repeat: no-repeat;
- width:17px;
- height:17px;
- 
+.connection:hover a,
+.connection:focus a{
+ background-color:var(--classic-blue);
+ width:46px;
+ height:48px;
 }
 
-.vk {	
+.connection:active a{
+ background-color:var(--baslight-blue);
+ width:46px;
+ height:48px;
+}
+ 
+.twit {  /* как поставить по середине*/
+ background-image: url('../img/twitter.svg');
+ background-repeat: no-repeat;
+ position: absolute;
+ width:17px;
+ height:17px;
+}
+
+.twit:active{  /* как поставить по середине и менять цвет при нажатии*/
+ background-image: url('../img/twitter.svg');
+ opacity: 0.3;
+}
+
+.fb {	
  background-image: url('../img/fb-icon.svg');
  background-repeat: no-repeat;
- width: 17px;
- height: 17px;	
+ position: absolute;
+ width:12px;
+ height:22px;
+ margin:70px;
 }
 
 .youtube {
  background-image: url('../img/youtube.svg');
  background-repeat: no-repeat;
- width: 17px;
- height: 17px;
+ position: absolute;
+ width:20px;
+ height:16px;
+ margin:130px;
 }
 
 .active-button:hover img,
-.active-button:focus img {
+.active-button:focus img {  /* логотип академии*/
 background-image: url('../img/logo-htmlacademy.svg'); 
 background-repeat: no-repeat;
 background-size:100%;
 
 }
 
-.active-button:active img {
+.active-button:active img { /* логотип академии*/
  background-color:var(--basic-black);
  opacity: 0.3; 
 }
