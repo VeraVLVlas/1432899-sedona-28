@@ -17,7 +17,7 @@
      <li><a href="#">Информация</a></li>
      <li><a href="#">Фото и видео</a></li>
      <li><a href="#">Карта штата</a></li>
-     <li><a href="catalog.html">Гостиницы</a></li>
+     <li class="the-only"><a href="catalog.html">Гостиницы</a></li>
     </ul>
     <div class="logo">
      <a href="index.html">
@@ -32,20 +32,20 @@
   <section>
    <h1 class="visually-hidden">Подбор отеля</h1>
    <div class="form blurred-background">
-    <form action="https://echo.htmlacademy.ru" method="get">
+    <form action="https://echo.htmlacademy.ru" method="get" class="substrate">
 	 <fieldset class="field">
 	  <legend class="filtration">Инфраструктура:</legend>
 	   <ul class="navigation-field">
 	    <li>
-	     <label for="pool">Бассейн</label>
+	     <label for="pool" class="services">Бассейн</label>
 		 <input type="checkbox" name="pool-amenities" id="pool" checked >
 	    </li>
 		<li>
-		 <label for="parking">Парковка</label>
+		 <label for="parking" class="services">Парковка</label>
 		 <input type="checkbox" name="parking-amenities" id="parking">
 		</li>
 		<li>
-		 <label for="internet">Wi-fi</label>
+		 <label for="internet" class="services">Wi-fi</label>
 		 <input type="checkbox" name="wi-fi" id="internet">
 		</li>
 	   </ul>
@@ -54,38 +54,40 @@
 	  <legend class="filtration">Тип жилья:</legend>
 	   <ul class="navigation-field">
 	    <li>
-	     <label for="hotel">Гостиница</label>
+	     <label for="hotel" class="services">Гостиница</label>
 		 <input type="checkbox" name="type-hotel" id="hotel" checked >
 	    </li>
 		<li>
-		 <label for="motel">Мотель</label>
+		 <label for="motel" class="services">Мотель</label>
 		 <input type="checkbox" name="type-motel" id="motel" checked>
 		</li>
 		<li>
-		 <label for="apartments">Апартаменты</label>
+		 <label for="apartments" class="services">Апартаменты</label>
 		 <input type="checkbox" name="type-apartments" id="apartments" checked>
 		</li>
 	   </ul>
 	 </fieldset>
 	 <fieldset class="field">
 	  <legend class="filtration">Стоимость в сутки (р):</legend>
-	   <input type="text" name="quantity" value="От 0">
-	   <input type="text" name="quantity" value="До 3000">
+	   <input type="text" class="transparent services" name="quantity" value="От 0">
+	   <input type="text" class="transparent services" name="quantity" value="До 3000">
 	   <input type="range" name="cost" min="0" max="3000" step="1">
 	 </fieldset>
-	 <button type="submit">Показать</button>
+	 <button type="submit" class="display">Показать</button>
 	</form>
    </div>
-	<div>
-	 <h3>Найдено:3</h3>
-	</div>
-	<div>
-	 <span>Сортировка:</span>
-	</div>
-	<ul class="navigation-field">
-	 <li><a href="#">по цене</a></li>
-	 <li><a href="#">по типу</a></li>
-	 <li><a href="#">по рейтингу</a></li>
+   
+	<div class="bottom-filter">
+	 <div>
+	  <h3>Найдено:3</h3>
+	 </div>
+	 <div>
+	  <span>Сортировка:</span>
+	 </div>
+	<ul class="navigation-field parameters">
+	 <li class="preferences"><a href="#">по цене</a></li>
+	 <li class="preferences"><a href="#">по типу</a></li>
+	 <li class="preferences"><a href="#">по рейтингу</a></li>
 	 <li>
 	 <span class="pointer-up"> <!-- Добавила для себя (где что за чем идет ) при стилизации уберу  -->
 	  <a href="#" aria-label="фильтр по возрастанию">Вверх
@@ -101,6 +103,7 @@
 	 </span>
 	 </li>
 	</ul>
+	</div>
   </section>
   <section>
    <ul class="navigation-field hotel">
