@@ -3,6 +3,8 @@
  --basic-white: #ffffff;
  --basic-black: #000000; 
  
+ --gray-special:rgba(0, 0, 0, 0.3);
+ 
  --special:#A9A9A9;
  --gray-frame:#EEEEEE;
  --cloud-gray:#EBEBEB;
@@ -589,12 +591,8 @@ color:var(--baslight-blue);
  background-color:var(--basic-white);
 }
  
- 
-/* не меняются цвета */
- 
 .preferences a {
- color:var(--basic-black);
- opacity: 0.3;
+ color:var(--gray-special);
  font-size: 12px;
  line-height: 18px;
  border-bottom: 1px dotted var(--baslight-blue);
@@ -612,12 +610,15 @@ color:var(--baslight-blue);
  color:var(--basic-black);
  font-size: 12px;
  line-height: 18px;
+ border-bottom:none;
 }
 
-.preferences:visible a{
- color:var(--basic-black);
+
+.price a{
+ color:var(--baslight-blue);
  font-size: 12px;
  line-height: 18px;
+ border-bottom:none;
 }
 
 .contacts {
