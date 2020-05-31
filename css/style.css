@@ -3,7 +3,8 @@
  --basic-white: #ffffff;
  --basic-black: #000000; 
  
- --gray-special:rgba(0, 0, 0, 0.3);
+ --gray-special:rgba(0, 0, 0, 0.3); 
+ --translucent-white:rgba(255, 255, 255, 0.9);
  
  --special:#A9A9A9;
  --gray-frame:#EEEEEE;
@@ -24,16 +25,16 @@
 }
 
 body {
-  min-width: 1280px;
-  margin: 0;
-  padding: 0;
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 700;
-  color: var(--basic-black);
-  text-transform: uppercase;
-  background-color: var(--basic-white);
+ min-width: 1280px;
+ margin: 0;
+ padding: 0;
+ font-family: "PT Sans", Arial, sans-serif;
+ font-size: 14px;
+ line-height: 21px;
+ font-weight: 700;
+ color: var(--basic-black);
+ text-transform: uppercase;
+ background-color: var(--basic-white);
 }
 
 a {
@@ -45,24 +46,81 @@ img {
   height: auto;
 }
 
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.top-of-page {
+  outline: 5px solid rgba(0, 255, 0, 0.3);  /*Убери меня*/
+  outline-offset: -5px;
+}
+
+.logo {
+ width:138px;
+ height:70px;
+ outline: 5px solid rgba(255, 0, 0, 0.3);  /*Убери меня*/
+ outline-offset: -5px;
+}
+
+.navigation{
+  display:flex;
+  justify-content:space-between;
+  outline: 5px solid rgba(0, 255, 255, 0.3);  /*Убери меня*/
+  outline-offset: -5px;
+  list-style: none;
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-links {
+ width: 1200px;
+ margin: 0 auto;
+ padding: 0 40px;
+}
+
 .photo-sedona{
  background-color: var(--basic-black);
  background-image: url('../img/background.jpg');
  background-repeat: no-repeat;
  background-size: 100%;
+ width:1200px;
  height: 509px;
+ margin: 0 auto;
+}
+
+.inscription {
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ align-items:center;
+ height:509px;
 }
 
 .inscription::after{ /* белый козырек не вытягивается по картинке */
  content:"";
  background-image: url('../img/visor.png');
- position: absolute;
+ position: relative;
  background-repeat: no-repeat;
  background-size: 100%;
  width: 1200px;
  height: 57px;
- bottom:-60px;
+ bottom:-51px;
 
+}
+
+.site-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+	
 }
 
 .site-navigation a{
@@ -71,11 +129,10 @@ img {
   background-color: transparent;
 }
 
-.field {
- background-color: var(--basic-white);	
-}
-
-.navigation-field {
+.field,
+.navigation-list,
+.navigation-basement,
+.search-filter {
  list-style: none;
 }
 
@@ -87,6 +144,15 @@ img {
 .working a:active{
  color:var(--basic-black);
  opacity: 0.3; 
+}
+
+.advantages {
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ align-items:center;
+ outline: 5px solid rgba(255, 0, 0 , 0.3);  /*Убери меня*/
+ height: 216px;
 }
 
 .the-only a:visited {
@@ -104,6 +170,10 @@ img {
  color:var(--basic-black);
  font-size: 21px;
  line-height: 26px;
+}
+
+.description h3{
+ margin:0;
 }
 
 .description:hover h3,
@@ -294,6 +364,33 @@ color:var(--baslight-blue);
  text-align: center;
 }
 
+.starf{
+ display:flex;
+ justify-content:space-around;
+ align-items:flex-start;
+ border-bottom-width: 1px; 
+ border-bottom-style: solid; 
+ border-bottom-color: var(--gray-frame);
+}
+
+.stars {
+ display:flex;
+ justify-content:space-around;
+ align-items:flex-start;
+ border-bottom-width: 1px; 
+ border-bottom-style: solid; 
+ border-bottom-color: var(--gray-frame);
+}
+
+.start {
+ display:flex;
+ justify-content:space-around;
+ align-items:flex-start;
+ border-bottom-width: 1px; 
+ border-bottom-style: solid; 
+ border-bottom-color: var(--gray-frame);
+}
+
 .housing-description::before {
  content:"";
  background-image:url('../img/icon-1.svg');
@@ -327,13 +424,10 @@ color:var(--baslight-blue);
  height: 256px;
 }
 
-.advantages {
- text-align: center;
-}
-
 .introduction {
  font-size: 21px;
  line-height: 26px;
+ margin:0;
 }
 
 .description-sedona {
@@ -364,9 +458,11 @@ color:var(--baslight-blue);
 }
 
 .form {
- text-align: center; 
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ outline: 5px solid rgba(255, 0, 0 , 0.3);  /*Убери меня*/
  background-color:var(--basic-white);
- width: 568px;
  height: 395px;
 
 }
@@ -546,9 +642,12 @@ color:var(--baslight-blue);
  width:100%;
 }
 
-.field {
+.main-menu
+ {
+ width: 100%;
  border:none;
  background:none;
+ background-color: var(--basic-white);	
 }
 
 .substrate {
@@ -621,7 +720,23 @@ color:var(--baslight-blue);
  border-bottom:none;
 }
 
+.page-footer {
+ background-color:var(translucent-white);
+ height: 120px;
+ 
+}
+
+.basement-card {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr; 
+ justify-self: center;
+ outline: 5px solid rgba(255, 0, 0, 0.7);  /* удали меня*/
+ outline-offset: -5px;
+}
+
 .contacts {
+ margin: 0;
+ width: 251px;
  font-size: 21px;
  line-height: 26px;
 }
@@ -648,7 +763,13 @@ color:var(--baslight-blue);
  width:46px;
  height:48px;
 }
- 
+
+.navigation-basement {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ max-width:152px;
+}
+
 .twit {  /* как поставить по середине*/
  background-image: url('../img/twitter.svg');
  background-repeat: no-repeat;
@@ -668,7 +789,6 @@ color:var(--baslight-blue);
  position: absolute;
  width:12px;
  height:22px;
- margin:70px;
 }
 
 .youtube {
@@ -677,7 +797,6 @@ color:var(--baslight-blue);
  position: absolute;
  width:20px;
  height:16px;
- margin:130px;
 }
 
 .active-button:hover img,

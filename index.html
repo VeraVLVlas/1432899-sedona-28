@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
  <meta charset="utf-8">
  <title>Sedona</title>
@@ -8,29 +8,31 @@
  <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="page-body">
 
  <header class="top-of-page">
   <nav class="site-navigation">
-   <div class="field">
-    <ul class="navigation-field working">
-     <li><a href="#">Информация</a></li>
-     <li><a href="#">Фото и видео</a></li>
-     <li><a href="#">Карта штата</a></li>
-     <li class="the-only"><a href="catalog.html">Гостиницы</a></li>
-    </ul>
-    <div class="logo">
-    <img src="img/logo.svg" height="70" width="138" alt="Логотип города Седона">
-   </div>
+	<div class="logo">
+     <img src="img/logo.svg" width="138" height="70" alt="Логотип города Седона">
+    </div>
+   <div class="main-menu">
+	<div class="navigation-links">
+     <ul class="navigation field working">
+      <li><a href="#">Информация</a></li>
+      <li><a href="#">Фото и видео</a></li>
+      <li><a href="#">Карта штата</a></li>
+      <li class="the-only"><a href="catalog.html">Гостиницы</a></li>
+     </ul>
+	</div>
   </div>
   </nav>
   
   <div class="photo-sedona"> 
-  <div class="inscription">      <!--как поставить изображение по середине  -->
+  <div class="inscription">    
    <img src="img/welcome.svg" width="456" height="351" alt="Добро пожаловать в Седону">
   </div>
   </div>
- 
+
    
  </header>
  <main>
@@ -46,7 +48,7 @@
   </section>
   
   <div class="real city">
-   <ul class="navigation-field">
+   <ul class="navigation-list">
     <li>
 	 <div class="list">
 	  <h3 class="insertion">Настоящий городок</h3>
@@ -130,7 +132,7 @@
   </section>
    
   
-   <form action="https://echo.htmlacademy.ru" method="post" class="form">  <!--как вынести ее на середину -->
+   <form action="https://echo.htmlacademy.ru" method="post" class="form">
     <p>
 	 <label for="check-in">Дата заезда: </label>
 	 <input type="text" class="cell cell-big" id="check-in" name="arrival-date" placeholder="24 апреля 2017">
@@ -158,31 +160,35 @@
    
   </main>
   
-  <footer> <!-- как задавать цвет подвалу -->
+  <footer class="page-footer main-footer"> <!-- как поместить карту под подвал -->
    <section> <!--карта отображается не по всей ширине экрана-->
     <img src="img/map.png" width="1199" height="594" alt="Карта с геолокацией города Седона" >
    </section>
    
-   <div class="contacts">
-    <p>#visitsedona</p>
-	<p><a href="tel:+7(495)666-02-66" class="tel">тел:+7(495)666-02-66</a></p>
+   
+   <div class="basement-card">
+    <div class="contacts">
+     <p>#visitsedona</p>
+	 <p><a href="tel:+7(495)666-02-66" class="tel">тел:+7(495)666-02-66</a></p>
+    </div>
+   
+    <ul class="navigation-basement connection">  
+     <li class="social-networks"> <!--  беда с кнопками соц.сетей, пляшет размер самих кнопок -->
+	  <a href="#" class="twit" aria-label="Twitter"></a></li>    
+	 <li class="social-networks"><a href="#" class="fb social-networks" aria-label="Facebook"></a></li>   
+	 <li class="social-networks"><a href="#" class="youtube social-networks" aria-label="YouTube"></a></li>    
+    </ul>
+   
+    <div class="partner">
+     <span>website by</span>
+	 <span> <!--картинка академии, не меняет цвета  -->
+	  <a href="https://htmlacademy.ru/intensive/htmlcss" class="active-button">
+	   <img src="img/htmlacademy.svg" width="115" height="41" alt="Логотип HTML academy ">
+	  </a>
+	 </span>
+    </div>
    </div>
    
-   <ul class="navigation-field connection">  
-    <li class="social-networks"> <!--  беда с кнопками соц.сетей, пляшет размер самих кнопок -->
-	 <a href="#" class="twit" aria-label="Twitter"></a></li>    
-	<li class="social-networks"><a href="#" class="fb social-networks" aria-label="Facebook"></a></li>   
-	<li class="social-networks"><a href="#" class="youtube social-networks" aria-label="YouTube"></a></li>    
-   </ul>
-   
-   <div class="partner">
-    <span>website by</span>
-	<span> <!--картинка академии, не меняет цвета  -->
-	 <a href="https://htmlacademy.ru/intensive/htmlcss" class="active-button">
-	  <img src="img/htmlacademy.svg" width="115" height="41" alt="Логотип HTML academy ">
-	 </a>
-	</span>
-   </div>
   </footer>
  
 </body>

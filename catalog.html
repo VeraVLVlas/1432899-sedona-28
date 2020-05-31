@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
  <meta charset="utf-8">
  <title>Sedona</title>
@@ -8,34 +8,36 @@
  <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="page-body">
 
- <header>
+ <header class="top-of-page">
   <nav class="site-navigation">
-   <div class="field">
-    <ul class="navigation-field working">
-     <li><a href="#">Информация</a></li>
-     <li><a href="#">Фото и видео</a></li>
-     <li><a href="#">Карта штата</a></li>
-     <li class="the-only"><a href="catalog.html">Гостиницы</a></li>
-    </ul>
-    <div class="logo">
-     <a href="index.html">
-     <img src="img/logo.svg" height="70" width="138" alt="Логотип города Седона">
-	 </a>
+   <div class="logo">
+      <a href="index.html">
+       <img src="img/logo.svg" height="70" width="138" alt="Логотип города Седона">
+	  </a>
     </div>
-   </div>
+   <div class="main-menu">
+    <div class="navigation-links">
+     <ul class="navigation field working">
+      <li><a href="#">Информация</a></li>
+      <li><a href="#">Фото и видео</a></li>
+      <li><a href="#">Карта штата</a></li>
+      <li class="the-only"><a href="catalog.html">Гостиницы</a></li>
+     </ul>
+	</div>
+    </div>
   </nav>
  </header>
  
  <main>
   <section>
    <h1 class="visually-hidden">Подбор отеля</h1>
-   <div class="form blurred-background">
+   <div class="blurred-background">
     <form action="https://echo.htmlacademy.ru" method="get" class="substrate">
 	 <fieldset class="field">
 	  <legend class="filtration">Инфраструктура:</legend>
-	   <ul class="navigation-field">
+	   <ul class="search-filter">
 	    <li>
 	     <label for="pool" class="services">Бассейн</label>
 		 <input type="checkbox" name="pool-amenities" id="pool" checked >
@@ -52,7 +54,7 @@
 	 </fieldset>
 	 <fieldset class="field">
 	  <legend class="filtration">Тип жилья:</legend>
-	   <ul class="navigation-field">
+	   <ul class="field">
 	    <li>
 	     <label for="hotel" class="services">Гостиница</label>
 		 <input type="checkbox" name="type-hotel" id="hotel" checked >
@@ -84,7 +86,7 @@
 	 <div>
 	  <span>Сортировка:</span>
 	 </div>
-	<ul class="navigation-field parameters">
+	<ul class="field parameters">
 	 <li class="price"><a href="#">по цене</a></li>
 	 <li class="preferences"><a href="#">по типу</a></li>
 	 <li class="preferences"><a href="#">по рейтингу</a></li>
@@ -105,8 +107,8 @@
 	</ul>
 	</div>
   </section>
-  <section>
-   <ul class="navigation-field hotel">
+  <section class="represented-hotels">
+   <ul class="field hotel">
     <li class="starf">  <!-- 4 звезды, почему они стоят в одном месте, а не у каждого ли, и как растянуть картинку по форме -->
 	 <div class="photo-amara">
 	  <img src="img/amara.jpg" height="90" width="135" alt="Фото отеля Amara Resort&spa">
@@ -170,13 +172,14 @@
   </section>
  </main>
  
- <footer>
+ <footer class="page-footer main-footer">
+  <div class="basement-card">
    <div class="contacts">
     <p>#visitsedona</p>
 	<p><a href="tel:+7(495)666-02-66" class="tel">тел:+7(495)666-02-66</a></p>
    </div>
-   <ul class="navigation-field connection">  
-    <li class="social-networks"> <!--  беда с кнопками соц.сетей, по центру и цвет при наведении-->
+   <ul class="navigation-basement connection">  
+    <li class="social-networks"> 
 	 <a href="#" class="twit" aria-label="Twitter"></a></li>    
 	<li class="social-networks"><a href="#" class="fb social-networks" aria-label="Facebook"></a></li>   
 	<li class="social-networks"><a href="#" class="youtube social-networks" aria-label="YouTube"></a></li>    
@@ -188,6 +191,7 @@
 	  <img src="img/htmlacademy.svg" width="115" height="41" alt="Логотип HTML academy ">
 	 </a>
 	</span>
+   </div>
    </div>
   </footer>
  
