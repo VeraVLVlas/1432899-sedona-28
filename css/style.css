@@ -686,10 +686,9 @@ color:var(--baslight-blue);
  left:50%;
  transform: translateX(-50%);
  background-color:var(--basic-white);
- outline: 5px solid rgba(255, 0, 0 , 0.3);  /*Убери меня*/
 }
 
-.form-functions {   /*как декоративные элементы вложить в форму*/
+.form-functions {
  display: flex;
  justify-content:center;
  align-items:center;
@@ -833,6 +832,7 @@ color:var(--baslight-blue);
  height: 38px;
  text-transform: uppercase;
  line-height: 26px;
+ padding-left: 10px;
 }
 
 .cell-little {
