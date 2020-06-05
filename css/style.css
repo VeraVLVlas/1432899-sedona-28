@@ -7,6 +7,7 @@
  --grey:#BDBBBC;
  --gray-special:rgba(0, 0, 0, 0.3); 
  --translucent-white:rgba(255, 255, 255, 0.9);
+ --transparent:rgba(255, 255, 255, 0.3);
  
  --special:#A9A9A9;
  --gray-frame:#EEEEEE;
@@ -62,8 +63,6 @@ img {
 .top-of-page {
  width:1200px;
  margin:0 auto;
-  outline: 5px solid rgba(0, 255, 0, 0.3);  /*Убери меня*/
-  outline-offset: -5px;
 }
 
 .mid-wrapper {
@@ -80,9 +79,7 @@ img {
 .navigation{
   display:flex;
   justify-content:space-between;
-  outline: 5px solid rgba(0, 255, 255, 0.3);  /*Убери меня*/
-  outline-offset: -5px;
-  min-width:1200px;
+  width:1200px;
   min-height:56px;
   margin:0;
   padding:0;
@@ -93,13 +90,20 @@ img {
 }
 
 .navigation li {
- display:flex;
- flex-wrap:wrap;
  width:216px;
 }
 
+.navigation li:nth-child(2){
+ margin-right: 150px;
+}
+
+.navigation li:nth-child(3),
+.navigation li:nth-child(4){
+ text-align:right;
+}
+
 .navigation li:nth-child(3){
-margin-left:150px;
+margin-left: 7px;
 }
 
 .navigation-links {
@@ -125,15 +129,21 @@ margin-left:150px;
  height:509px;
 }
 
+.inscription img {
+ position:absolute;
+ margin:0 auto;
+ top:134px;
+}
+
 .inscription::after{ /* белый козырек не вытягивается по картинке */
  content:"";
  background-image: url('../img/visor.png');
- position: relative;
+ position:absolute;
  background-repeat: no-repeat;
  background-size: 100%;
  width: 1200px;
  height: 57px;
- bottom:-51px;
+ margin-top:226px;
 
 }
 
@@ -179,11 +189,15 @@ margin-left:150px;
  width:1200px;
  height:216px;
  margin:0 auto;
- outline: 5px solid rgba(255, 0, 0 , 0.3);  /*Убери меня*/
 }
 
 .first-form {
  height:291px;
+}
+
+.search-header {
+ min-width:435px;
+ min-height:157px;
 }
 
 .the-only a:visited {
@@ -240,39 +254,59 @@ color:var(--baslight-blue);
 }
 
 .cost {
- font-size: 14px;
- line-height: 21px;
- font-weight: normal;
+ font-size:14px;
+ line-height:21px;
+ font-weight:normal;
+ margin-bottom:15px;
+}
+
+.price-of-service{
+ padding-left: 38px;
+}
+
+.price-of-service-2 {
+ padding-left: 65px;
+}
+
+.price-of-service-3 {
+ padding-left: 23px;
+}
+
+.blue {
+ display: inline-block;
 }
 
 .blue a {
  background-color:var(--baslight-blue);
- width: 110px;
- height: 27px;
 }
 
 .blue a:hover,
 .blue a:focus {
  background-color:var(--classic-blue);
- width: 110px;
- height: 27px;
 }
 
 .blue a:active {
  background-color:var(--dark-blue);
- width: 110px;
- height: 27px;
+}
+
+.link {
+ vertical-align:middle;
+ padding-right:16px;
+ padding-bottom:2px;
+ padding-left:17px;
+}
+
+.link-2 {
+ vertical-align:middle;
+ padding-right:16px;
+ padding-bottom:2px;
+ padding-left:17px;
 }
 
 .details {
  color:var(--basic-white);
  font-size: 14px;
  line-height: 21px;
- text-align:center;
- padding-top:3px;
- padding-right:16px;
- padding-bottom:3px;
- padding-left:17px;
 }
 
 .details:active {
@@ -280,39 +314,30 @@ color:var(--baslight-blue);
  opacity: 0.3;
  font-size: 14px;
  line-height: 21px;
- padding-top:3px;
- padding-right:16px;
- padding-bottom:3px;
- padding-left:17px;
+}
+
+.dark-grey {
+ display:inline-block;
+ margin-left:4px;
 }
 
 .dark-grey a { 
- background-color:var(--button-light);
- width: 142px;
- height: 27px;                                      
+ background-color:var(--button-light);                                     
 }
 
 .dark-grey a:hover,
 .dark-grey a:focus {
- background-color:var(--button-classic);
- width: 142px;
- height: 27px;                                      
+ background-color:var(--button-classic);                                  
 }
 
 .dark-grey a:active {
- background-color:var(--button-dark);
- width: 142px;
- height: 27px;                                      
+ background-color:var(--button-dark);                                   
 }
 
-.to-book {    /*вернись и посмотри*/
+.to-book {  
  color:var(--basic-white);
  font-size: 14px;
  line-height: 21px;
- padding-top:7px;
- padding-bottom:7px;
- padding-right:17px;
- padding-left:16px;
 }
 
 .to-book:active {
@@ -324,6 +349,11 @@ color:var(--baslight-blue);
  padding-right:17px;
  padding-bottom:3px;
  padding-left:16px;
+}
+
+.container{
+ margin-top: 27px;
+ margin-right:73px;	
 }
 
 .rating{
@@ -340,17 +370,20 @@ color:var(--baslight-blue);
   padding-left:15px;
 }
 
+
+
 /*
-.first-star::after { /* 4 звезды, если задать before то звезды сталкивают рейтинг как звезды поставить вперед марджины не работают
+.star-rating::after{ /* 4 звезды, кому из задать, див или спан
  content:"";
  background-image:url('../img/star.svg');
  background-repeat:repeat-x;
  display: block;
  width:75px;
  height:30px;
- 
 }
 
+
+/*
 .second-star::after {  /* 3 звезды
  content:"";
  background-image:url('../img/star.svg');
@@ -400,7 +433,7 @@ color:var(--baslight-blue);
  grid-template-columns: 1fr 1fr 1fr;
  align-items:center;
  max-width:1200px;
- height: 330px;
+ height: 324px;
 }
 
 .list {
@@ -446,6 +479,15 @@ color:var(--baslight-blue);
  min-width:780px;
 }
 
+.filter-button:hover path, 
+.filter-button:focus path { 
+ fill:var(--basic-black);
+}
+
+.filter-button:active path { 
+ fill:var(--baslight-blue);
+}
+
 .starf{
  display:flex;
  flex-direction: row;
@@ -485,8 +527,22 @@ color:var(--baslight-blue);
  border-bottom-color: var(--gray-frame);
 }
 
+.photo-amara,
+.photo-desert,
+.photo-villas {
+ padding-left: 73px;
+ padding-top: 30px;
+}
+
 .about-the-hotel {
- min-width:255px;
+ width: 271px;
+ min-height: 92px;
+ margin-right:500px;
+}
+
+.star-rating {
+ display:block;
+ padding-bottom: 47px;
 }
 
 .housing-description::before {
@@ -550,15 +606,29 @@ color:var(--baslight-blue);
 }
 
 .introduction {
- font-size: 21px;
- line-height: 26px;
+ font-size:21px;
+ line-height:26px;
+ padding-top:22px;
  margin:0;
+ width: 470px;
+ min-height: 80px;
+ text-align: center;
+}
+
+.description{
+ margin-top: 23px;
+ margin-bottom: 7px;
 }
 
 .description-sedona {
  line-height: 26px;
  color:var(--basic-dark-grey); 
  font-weight: normal;
+ text-align:center;
+ margin:0;
+ margin-bottom:34px;
+ width:519px;
+ min-height:26px;
 }
 
 .real-city {
@@ -568,18 +638,32 @@ color:var(--baslight-blue);
 }
 
 .interest {
+ font-size:30px;
+ line-height:24px;
+ text-align:center;
  margin:0;
  padding:0;
- font-size: 30px;
- line-height: 24px;
+ padding-top:31px;
 }
 
 .reserv {
- margin:0;
- padding:0;
+ display:flex;
+ flex-direction:column;
+ align-items:center;
  line-height: 24px;
  font-weight: normal;
  color:var(--basic-dark-grey);
+ text-align:center;
+ margin:0;
+ padding:0;
+ padding-top:32px;
+ min-width:435px;
+ min-height:45px;
+}
+
+.zoom {
+ display:block;
+ width:297px;
 }
 
 .button {
@@ -612,6 +696,14 @@ color:var(--baslight-blue);
  flex-wrap: wrap;
  width:568px;
  min-height:395px;
+}
+
+.form-functions p {
+ margin:0;
+}
+
+.arrival-date {
+ padding-top:25px;
 }
 
 .button-element {
@@ -891,20 +983,34 @@ color:var(--baslight-blue);
 }
 
 .basement-card {
- display: grid;
- grid-template-columns: 1fr 1fr 1fr; 
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ position:absolute;
+ top:2645px;
  background-color:var(--translucent-white);
+ width:1200px;
  min-height:120px;
- outline: 5px solid rgba(255, 0, 0, 0.7);  /* удали меня*/
- outline-offset: -5px;
+}
+
+.basement-catalog {
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ background-color:var(--translucent-white);
+ width:1200px;
+ min-height:120px;
 }
 
 .contacts {
+ font-size: 21px;
+ line-height: 26px;
  align-self: center;
  margin: 0;
  min-width: 251px;
- font-size: 21px;
- line-height: 26px;
+ min-height: 52px;
+ text-align: center;
+ padding-left: 111px;
 }
 
 .contacts p {
@@ -915,77 +1021,51 @@ color:var(--baslight-blue);
  color:var( --basic-black);
 }
 
-.connection a{
- background-color:var(--dark-blue);
- width:46px;
- height:48px;
-}
- 
-.connection:hover a,
-.connection:focus a{
- background-color:var(--classic-blue);
- width:46px;
- height:48px;
+.navigation-basement {
+ display:flex;
+ justify-content:space-around;
+ align-items:center;
+ width:150px;
+ height:50px;
+ margin:0 auto;
+ padding:0;
 }
 
-.connection:active a{
+.social-button {
+ display: flex;
+ align-items: center;
+ justify-content: center;
  background-color:var(--baslight-blue);
  width:46px;
  height:48px;
 }
 
-.navigation-basement {
- display: grid;
- grid-template-columns: 1fr 1fr 1fr;
- align-self:center;
- margin:40px;
- padding:0;
+.social-networks:hover a,
+.social-networks:focus a{
+ background-color:var(--classic-blue);
 }
 
-.partner{
- align-self: center;
-}
-
-.social-button:hover path,
-.social-button:focus path {
-  fill: var(--basic-black);
+.social-networks:active a{
+ background-color:var(--dark-blue);
 }
 
 .social-button:active path {
-  fill: var(--baslight-blue);
+ fill:var(--transparent);    
 }
 
-.buttons {
- width:500px;
+.made {
+ display:inline-block;
 }
 
-.twit {  /* как поставить по середине*/
- background-image: url('../img/twitter.svg');
- background-repeat: no-repeat;
- position:absolute;
- width:17px;
- height:17px;
+.partner{
+ padding-right: 137px;
+ padding-bottom: 32px;
 }
 
-.twit:active{  /* как поставить по середине и менять цвет при нажатии*/
- background-image: url('../img/twitter.svg');
- opacity: 0.3;
-}
-
-.fb {	
- background-image: url('../img/fb-icon.svg');
- background-repeat: no-repeat;
- position: absolute;
- width:12px;
- height:22px;
-}
-
-.youtube {
- background-image: url('../img/youtube.svg');
- background-repeat: no-repeat;
- position: absolute;
- width:20px;
- height:16px;
+.academy-logo {
+ display:inline;
+ position: relative;
+ top: 15px;
 }
 
 .active-button:hover path,

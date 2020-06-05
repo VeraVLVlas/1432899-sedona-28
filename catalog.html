@@ -91,25 +91,21 @@
 	 <li class="price"><a href="#">по цене</a></li>
 	 <li class="preferences"><a href="#">по типу</a></li>
 	 <li class="preferences"><a href="#">по рейтингу</a></li> 
-	 <li>
-	 <span class="pointer-up"> 
-	  <a href="#" class="social-button" aria-label="фильтр по возрастанию">
+	 <li class="pointer">
+	  <a href="#" class="filter-button" aria-label="фильтр по возрастанию">
 	   <span class="visually-hidden">Вверх</span>
 	   <svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
 	    <path d="M5.5 0L0 10h11L5.5 0z" fill="#CACACA"/>
 	   </svg>
 	  </a>
-	 </span>
 	 </li>
-	 <li>
-	 <span class="down-pointer">
-	  <a href="#" class="social-button" aria-label="фильтр по убыванию">
+	 <li class="pointer">
+	  <a href="#" class="filter-button" aria-label="фильтр по убыванию">
 	   <span class="visually-hidden">Вниз</span>
 	   <svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
 	    <path d="M5.5 10L0 0h11" fill="#81B3D2"/>
 	   </svg>
 	  </a>
-	 </span>
 	 </li>
 	</ul>
 	</div>
@@ -126,18 +122,20 @@
 	 </div>
 	 <div class="cost">
 	  <span>Гостиница</span>
-	  <span>от 4000 р.</span>
+	  <span class="price-of-service">от 4000 р.</span>
 	 </div>
 	 <div class="blue">
-	  <a href="#"><span class="details">Подробнее</span></a>
+	  <a href="#" class="link"><span class="details">Подробнее</span></a>
 	 </div>
 	 <div class="dark-grey">
-	  <a href="#"><span class="to-book">Забронировать</span></a>
+	  <a href="#" class="link-2"><span class="to-book">Забронировать</span></a>
 	  </div>
 	 </div>
-	 <div  class="rating first-star">
-	  <span>Рейтинг:8,5</span> 
-	  <span>4 звезды</span>
+	 <div class="container">
+	  <div class="first-star">
+	   <span class="star-rating">4 звезды</span>
+	   <span class="rating">Рейтинг:8,5</span> 
+	  </div>
 	 </div>
 	</li>
 	<li class="stars"> 
@@ -150,18 +148,20 @@
 	 </div>
 	 <div class="cost">
 	  <span>Мотель</span>
-	  <span>от 3000 р.</span>
+	  <span class="price-of-service-2">от 3000 р.</span>
 	 </div>
 	 <div class="blue">
-	  <a href="#"><span class="details">Подробнее</span></a>
+	  <a href="#" class="link"><span class="details">Подробнее</span></a>
 	 </div>
 	 <div class="dark-grey">
-	  <a href="#"><span class="to-book">Забронировать</span></a>
+	  <a href="#" class="link-2"><span class="to-book">Забронировать</span></a>
 	  </div>
 	 </div>
-	 <div class="rating second-star">
-	  <span>Рейтинг:8,9</span>
-	  <span>3 звезды</span>
+	 <div class="container">
+	  <div class="second-star">
+	   <span class="star-rating">3 звезды</span>
+	   <span class="rating">Рейтинг:8,9</span>
+	  </div>
 	 </div>
 	</li>
 	<li class="start">  
@@ -175,43 +175,66 @@
 	 </div>
 	 <div class="cost">
 	  <span>Апартаменты</span>
-	  <span>от 2000 р.</span>
+	  <span class="price-of-service-3">от 2000 р.</span>
 	 </div>
 	 <div class="blue">
-	  <a href="#"><span class="details">Подробнее</span></a>
+	  <a href="#" class="link"><span class="details">Подробнее</span></a>
 	 </div>
 	 <div class="dark-grey">
-	  <a href="#"><span class="to-book">Забронировать</span></a>
+	  <a href="#" class="link-2"><span class="to-book">Забронировать</span></a>
 	  </div>
 	 </div>
-	 <div class="third-star rating">
-	  <span>Рейтинг:9,2</span>
-	  <span>2 звезды</span>
+	 <div class="container">
+	  <div class="third-star">
+	   <span class="star-rating">2 звезды</span>
+	   <span class="rating">Рейтинг:9,2</span>
+	  </div>
 	 </div>
 	</li>
    </ul>
   </section>
  </main>
  
- <footer class="page-footer main-footer">
-  <div class="basement-card">
-   <div class="contacts">
-    <p>#visitsedona</p>
-	<p><a href="tel:+7(495)666-02-66" class="tel">тел:+7(495)666-02-66</a></p>
-   </div>
-   <div class="buttons">
+ <footer class="page-footer main-footer"> 
+  <div class="basement-catalog">
+    <div class="contacts">
+     <p>#visitsedona</p>
+	 <p><a href="tel:+7(495)666-01-66" class="tel">тел:+7(495)666-01-66</a></p>
+    </div>
+    <div class="buttons">
     <ul class="navigation-basement connection">  
-     <li class="social-networks"> 
-	  <a href="#" class="twit" aria-label="Twitter"></a></li>    
-	 <li class="social-networks"><a href="#" class="fb social-networks" aria-label="Facebook"></a></li>   
-	 <li class="social-networks"><a href="#" class="youtube social-networks" aria-label="YouTube"></a></li>    
+     <li class="social-networks">
+	  <a href="#" class="social-button twit" aria-label="Twitter">
+	   <svg width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+	    <path d="M10.95 1.144c1.685-.496 2.984.27 3.577 1.18.673-.232 1.331-.482 2.011-.709a2.345 2.345 0 01-.857 1.768c.685.17 1.304-.49 1.304-.49-.169 
+		1-1.006 1.787-1.563 2.023-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422
+		4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.12C1.705 9.246.374 8.53.448 6.33c.285.328 
+		1.067.536 1.34.472-.703-.24-1.97-3.36-.894-4.952 1.818 1.854 3.735 3.606 7.152 3.773.208-2.293 1.137-3.83 2.904-4.479z" fill="#fff"/>
+	   </svg>
+	  </a>
+	 </li>    
+	 <li class="social-networks">
+	  <a href="#" class="social-button fb" aria-label="Facebook">
+	   <svg width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+	    <path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#fff"/>
+	   </svg>
+	  </a>
+	 </li>   
+	 <li class="social-networks">
+	  <a href="#" class="social-button youtube" aria-label="YouTube">
+	   <svg width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+	    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0h14c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H3c-1.65 0-3-1.35-3-3V3c0-1.65 1.35-3 
+		3-3zm3.027 4.002v7.996L15.014 8 6.027 4.002z" fill="#fff"/>
+	  </svg>
+	  </a>
+	 </li>    
     </ul>
    </div>
-   <div class="partner">
-    <span>website by</span>
-	<span>
-	 <a href="https://htmlacademy.ru/intensive/htmlcss" class="active-button">
-	  <span class="visually-hidden">Логотип Академии</span>
+    <div class="partner">
+     <span class="made">website by</span>
+	 <div class="academy-logo"> 
+	  <a href="https://htmlacademy.ru/intensive/htmlcss" class="active-button">
+	   <span class="visually-hidden">Логотип Академии</span>
 	   <svg width="115" height="41" fill="none" xmlns="http://www.w3.org/2000/svg">
 	   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.52 1.057h-.17L0 2.72v28.776l15.35 9.343 15.352-9.344V2.72L15.52 1.057zm61.498 
 	   1.565h-1.93v13.11h1.93V2.621zm-36.156.01v5.136a3.976 3.976 0 012.849-1.23 3.387 3.387 0 012.614 1.007 3.55 3.55 0 
@@ -245,9 +268,9 @@
 	   9.232-5.653v-6.107l4.114-2.492zm.01-1.542l-3.67 2.158-1.689 1.079-8.04-4.931v1.413l6.848 4.23-.148.097-1.055.582-5.665-3.452v1.445l4.473
 	   2.72-1.055.722-3.376-2.05v1.414l2.215 1.338-2.247 1.36L2.11 16.863 15.31 8.729l13.399 8.049zm-13.42-9.506l13.42 8.081V4.563L15.362 3.13 
 	   2.015 4.564v10.79l13.273-8.082z" fill="#231F20"/></svg>
-	 </a>
-	</span>
-   </div>
+	  </a>
+	 </div>
+    </div>
    </div>
   </footer>
  
