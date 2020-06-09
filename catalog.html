@@ -32,81 +32,99 @@
  
  <main>
   <section>
+  
    <h1 class="visually-hidden">Подбор отеля</h1>
+   
    <div class="blurred-background">
     <form action="https://echo.htmlacademy.ru" method="get" class="substrate">
-	 <fieldset class="field">
-	  <legend class="filtration">Инфраструктура:</legend>
+	 <fieldset class="fields">
+	  <legend class="filtration infrastructure">Инфраструктура:</legend>
 	   <ul class="search-filter">
-	    <li>
-	     <label for="pool" class="services">Бассейн</label>
-		 <input type="checkbox" name="pool-amenities" id="pool" checked >
+	    <li class="cursor">
+		 <input type="checkbox" class="visually-hidden filter-checkbox" name="pool-amenities" id="pool" checked >
+	     <label for="pool" class="services checkbox">Бассейн</label>
 	    </li>
-		<li>
-		 <label for="parking" class="services">Парковка</label>
-		 <input type="checkbox" name="parking-amenities" id="parking">
+		<li class="cursor">
+		 <input type="checkbox" class="visually-hidden filter-checkbox" name="parking-amenities" id="parking">
+		 <label for="parking" class="services checkbox">Парковка</label>
 		</li>
-		<li>
-		 <label for="internet" class="services">Wi-fi</label>
-		 <input type="checkbox" name="wi-fi" id="internet">
+		<li class="cursor">
+		 <input type="checkbox" class="visually-hidden filter-checkbox" name="wi-fi" id="internet">
+		 <label for="internet" class="services checkbox">Wi-fi</label>
 		</li>
 	   </ul>
 	 </fieldset>
-	 <fieldset class="field">
-	  <legend class="filtration">Тип жилья:</legend>
-	   <ul class="field">
-	    <li>
-	     <label for="hotel" class="services">Гостиница</label>
-		 <input type="checkbox" name="type-hotel" id="hotel" checked >
+	 <fieldset class="fields">
+	  <legend class="filtration type-of-housing">Тип жилья:</legend>
+	   <ul class="field type-of-housing">
+	    <li class="cursor">
+		 <input type="checkbox" class="visually-hidden filter-checkbox" name="type-hotel" id="hotel" checked >
+	     <label for="hotel" class="services checkbox">Гостиница</label>
 	    </li>
-		<li>
-		 <label for="motel" class="services">Мотель</label>
-		 <input type="checkbox" name="type-motel" id="motel" checked>
+		<li class="cursor">
+		 <input type="checkbox" class="visually-hidden filter-checkbox" name="type-motel" id="motel" checked>
+		 <label for="motel" class="services checkbox">Мотель</label>
 		</li>
-		<li>
-		 <label for="apartments" class="services">Апартаменты</label>
-		 <input type="checkbox" name="type-apartments" id="apartments" checked>
+		<li class="cursor">
+		 <input type="checkbox" class="visually-hidden filter-checkbox" name="type-apartments" id="apartments" checked>
+		 <label for="apartments" class="services checkbox">Апартаменты</label>
 		</li>
 	   </ul>
 	 </fieldset>
-	 <fieldset class="field">
+	 <fieldset class="fields">
 	  <legend class="filtration">Стоимость в сутки (р):</legend>
-	   <input type="text" class="transparent services" name="quantity" value="От 0">
-	   <input type="text" class="transparent services" name="quantity" value="До 3000">
-	   <input type="range" name="cost" min="0" max="3000" step="1">
+	   <div class="cost-block">
+        <input type="text" class="transparent services from-zero" name="quantity" value="От 0">
+	    <input type="text" class="transparent services three-thousand" name="quantity" value="До 3000">
+	   </div>
+	   <div class="range-controls">
+        <div class="scale">
+         <div class="bar" 
+		 style="width:87%;
+                margin-right:13%">
+		</div>
+        </div>
+        <div class="toggle toggle-min" tabindex="0" style="
+              left:0%
+            "></div>
+        <div class="toggle toggle-max" tabindex="0" style="
+              left: 82%;
+            "></div>
+       </div>
 	   <button type="submit" class="display">Показать</button>
+	   </div>
 	 </fieldset>
 	</form>
    </div>
-   
-   
 	<div class="bottom-filter">
 	 <div class="found">
 	  <h3>Найдено:3</h3>
 	 </div>
-	 <div class="sorting">
-	  <span>Сортировка:</span>
-	 </div>
-	<ul class="field parameters">
-	 <li class="price"><a href="#">по цене</a></li>
-	 <li class="preferences"><a href="#">по типу</a></li>
-	 <li class="preferences"><a href="#">по рейтингу</a></li> 
-	 <li class="pointer">
-	  <a href="#" class="filter-button" aria-label="фильтр по возрастанию">
-	   <span class="visually-hidden">Вверх</span>
-	   <svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-	    <path d="M5.5 0L0 10h11L5.5 0z" fill="#CACACA"/>
-	   </svg>
-	  </a>
+
+	  <div class="sorting">
+	   <span>Сортировка:</span>
+	  </div>
+	  <ul class="field parameters">
+	   <li class="price"><a href="#">по цене</a></li>
+	   <li class="preferences"><a href="#">по типу</a></li>
+	   <li class="preferences"><a href="#">по рейтингу</a></li> 
+	   <li class="pointer">
+	   <a href="#" class="filter-button" aria-label="фильтр по возрастанию">
+	    <span class="visually-hidden">Вверх</span>
+	     <svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+	      <path d="M5.5 0L0 10h11L5.5 0z" fill="#CACACA"/>
+	     </svg>
+	   </a>
+	  </li>
+	  <li class="pointer">
+	   <a href="#" class="filter-button" aria-label="фильтр по убыванию">
+	    <span class="visually-hidden">Вниз</span>
+	    <svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+	     <path d="M5.5 10L0 0h11" fill="#81B3D2"/>
+	    </svg>
+	   </a>
 	 </li>
-	 <li class="pointer">
-	  <a href="#" class="filter-button" aria-label="фильтр по убыванию">
-	   <span class="visually-hidden">Вниз</span>
-	   <svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-	    <path d="M5.5 10L0 0h11" fill="#81B3D2"/>
-	   </svg>
-	  </a>
-	 </li>
+	
 	</ul>
 	</div>
   </section>
