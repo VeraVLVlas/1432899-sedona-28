@@ -37,16 +37,22 @@ body {
  font-weight:700;
  color: var(--basic-black);
  text-transform: uppercase;
- background-color: var(--basic-white);
+ background-color: var(--light-gray);
 }
 
 a {
-  text-decoration: none;
+ text-decoration: none;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+ max-width: 100%;
+ height: auto;
+}
+
+.shadow{
+ box-shadow: 0 0 5px;
+ width:1200px;
+ margin:0 auto;
 }
 
 .page {
@@ -63,11 +69,7 @@ img {
 .top-of-page {
  width:1200px;
  margin:0 auto;
-}
 
-.mid-wrapper {
- margin:0 auto;
- padding:0;
 }
 
 .logo {
@@ -77,16 +79,17 @@ img {
 }
 
 .navigation{
-  display:flex;
-  justify-content:space-between;
-  width:1200px;
-  min-height:56px;
-  margin:0;
-  padding:0;
-  padding-top:15px;
-  padding-bottom:15px;
-  padding-left:72px;
-  padding-right:72px;
+ display:flex;
+ justify-content:space-between;
+ flex-wrap:wrap;
+ width:1200px;
+ min-height:56px;
+ margin:0;
+ padding:0;
+ padding-top:15px;
+ padding-bottom:15px;
+ padding-left:72px;
+ padding-right:72px;
 }
 
 .navigation li {
@@ -138,12 +141,11 @@ margin-left: 7px;
 .inscription::after{ 
  content:"";
  background-image: url('../img/visor.png');
- position:absolute;
  background-repeat: no-repeat;
  background-size: 100%;
  width: 1200px;
  height: 57px;
- margin-top:226px;
+ margin-top:451px;
 }
 
 .site-navigation {
@@ -186,8 +188,9 @@ margin-left: 7px;
  flex-direction:column;
  justify-content:space-around;
  align-items:center;
+ background-color:var(--basic-white);
  width:1200px;
- height:216px;
+ min-height:216px;
  margin:0 auto;
 }
 
@@ -243,6 +246,7 @@ margin-left: 7px;
  display:flex;
  flex-wrap:wrap;
  align-items:center;
+ flex-wrap:wrap;
  min-width:780px;
  margin:0;
  padding:0;
@@ -430,7 +434,7 @@ color:var(--baslight-blue);
  background-size:21px;
  background-repeat: space;
  display: block;
- width:95px;
+ width:96px;
  height:30px;
  position:relative;
  left:22px;
@@ -483,33 +487,35 @@ color:var(--baslight-blue);
  display:flex;
  justify-content:space-between;
  width:1200px;
+ height:256px;
 }
 
 .point-two {
  display: grid;
  grid-template-columns: 1fr 1fr 1fr;
  align-items:center;
- max-width:1200px;
- height: 324px;
+ background-color:var(--basic-white);
+ width:1200px;
+ min-height:330px;
 }
 
 .list {
  display:flex;
  flex-direction:column;
- justify-content:center;
  align-items:center;
+ flex-wrap:wrap;
  background-color:var(--baslight-blue);
  width: 400px;
- height: 256px;
+ min-height: 256px;
 }
 
 .insertion {
  color:var( --basic-white);
- font-size: 21px;
- line-height: 21px;
- text-align: center;
+ font-size:21px;
+ line-height:21px;
+ text-align:center;
  margin:0;
- padding-bottom:50px;
+ padding-top:45px;
 }
 
 .bridge {
@@ -518,18 +524,17 @@ color:var(--baslight-blue);
  line-height:21px;
  text-align:center;
  margin:0;
- padding-bottom:11px;
+ padding-top:49px;
 }
 
 .number-two {
- position:relative;
- top:14px;
+ display:block;
+ padding-top:26px;
 }
 
 .about-the-bridge{ 
  margin:0;
- padding-top:37px;
- padding-bottom:5px;
+ padding-top:24px;
 }
 
 .insert-description {
@@ -539,13 +544,13 @@ color:var(--baslight-blue);
 }
 
 .number-one{
- position:relative;
- bottom:25px;
+ display:block;
+ padding-top:27px;
 }
 
 .sedona-description{
  margin:0;
- padding-bottom:5px;
+ padding-top:24px;
 }
 
 .continuation {
@@ -553,15 +558,15 @@ color:var(--baslight-blue);
  line-height:21px;
  text-align:center;
  margin:0;
- padding-top:13px;
+ padding-top:19px;
 }
 
 .sentence {
  color:var(--basic-dark-grey);
- font-weight: normal;
- text-align: center;
- margin: 0;
- padding-top: 12px;
+ font-weight:normal;
+ text-align:center;
+ margin:0;
+ padding-top:12px;
 }
 
 .about-souvenirs {
@@ -585,9 +590,11 @@ color:var(--baslight-blue);
  flex-direction: row;
  justify-content: space-between;
  align-items:flex-start;
+ flex-wrap:wrap;
  width:1200px;
  min-height:153px;
  margin:0 auto;
+ background-color:var(--basic-white);
  border-bottom-width: 1px; 
  border-bottom-style: solid; 
  border-bottom-color: var(--gray-frame);
@@ -598,9 +605,11 @@ color:var(--baslight-blue);
  flex-direction:row;
  justify-content:space-between;
  align-items:flex-start;
+ flex-wrap:wrap;
  width:1200px;
  min-height:151px;
  margin:0 auto;
+ background-color:var(--basic-white);
  border-bottom-width:1px; 
  border-bottom-style:solid; 
  border-bottom-color:var(--gray-frame);
@@ -611,9 +620,11 @@ color:var(--baslight-blue);
  flex-direction:row;
  justify-content:space-between;
  align-items:flex-start;
+ flex-wrap:wrap;
  width:1200px;
  min-height:149px;
  margin:0 auto;
+ background-color:var(--basic-white);
  border-bottom-width:1px; 
  border-bottom-style:solid; 
  border-bottom-color:var(--gray-frame);
@@ -645,7 +656,7 @@ color:var(--baslight-blue);
  background-image:url('../img/icon-1.svg');
  background-repeat:no-repeat;
  position:relative;
- bottom:15px;
+ bottom:10px;
  width:75px;
  height:72px;
 }
@@ -655,7 +666,7 @@ color:var(--baslight-blue);
  background-image:url('../img/icon-3.svg');
  background-repeat:no-repeat;
  position:relative;
- bottom:15px;
+ bottom:10px;
  width:75px;
  height:70px;
 }
@@ -665,7 +676,7 @@ color:var(--baslight-blue);
  background-image:url('../img/icon-2.svg');
  background-repeat:no-repeat;
  position:relative;
- bottom:14px;
+ bottom:9px;
  width:64px;
  height:77px;
 }
@@ -695,7 +706,7 @@ color:var(--baslight-blue);
 }
 
 .detailed{
- padding-top:25px;
+ padding-top:24px;
 }
 
 .number-three,
@@ -705,14 +716,6 @@ color:var(--baslight-blue);
  top:15px;
 }
 
-.point-four {
- display: grid;
- grid-template-columns: 1fr 1fr 1fr;
- align-items:center;
- width:1200px;
- height: 256px;
-}
-
 .gray-background {
  display:flex;
  flex-direction:column;
@@ -720,6 +723,8 @@ color:var(--baslight-blue);
  align-items:center;
  background-color:var(--gray-frame);
  height: 256px;
+ width:400px;
+ float:left;
 }
 
 .introduction {
@@ -728,8 +733,8 @@ color:var(--baslight-blue);
  padding-top:22px;
  margin:0;
  width: 470px;
- min-height: 80px;
- text-align: center;
+ min-height:80px;
+ text-align:center;
 }
 
 .description{
@@ -743,7 +748,7 @@ color:var(--baslight-blue);
  font-weight: normal;
  text-align:center;
  margin:0;
- margin-bottom:34px;
+ margin-bottom:33px;
  width:519px;
  min-height:26px;
 }
@@ -751,7 +756,6 @@ color:var(--baslight-blue);
 .real-city {
  margin:0 auto;
  width:1200px;
- min-height:1100px;
 }
 
 .interest {
@@ -760,7 +764,7 @@ color:var(--baslight-blue);
  text-align:center;
  margin:0;
  padding:0;
- padding-top:38px;
+ padding-top:40px;
 }
 
 .reserv {
@@ -792,9 +796,10 @@ color:var(--baslight-blue);
  display: flex;
  flex-direction: column;
  align-items:center;
+ flex-wrap:wrap;
  position: absolute;
  width:568px;
- height:395px;
+ min-height:395px;
  left:50%;
  transform: translateX(-50%);
  background-color:var(--basic-white);
@@ -811,8 +816,56 @@ color:var(--baslight-blue);
  margin:0;
 }
 
+.form-functions input::-webkit-input-placeholder {
+ font-family: PT Sans;
+ color:var(--basic-black);
+ font-size:14px;
+ line-height:26px;
+ font-weight:bold;
+ text-transform:uppercase;
+ opacity: 1;
+ line-height:2.8;
+ }
+
+.form-functions input::-moz-placeholder{
+ font-family: PT Sans;
+ color:var(--basic-black);
+ font-size:14px;
+ line-height:26px;
+ font-weight:bold;
+ text-transform:uppercase;
+ opacity: 1;
+ line-height:2.8;
+ }
+
+.form-functions input:-moz-placeholder{
+ font-family: PT Sans;
+ color:var(--basic-black);
+ font-size:14px;
+ line-height:26px;
+ font-weight:bold;
+ text-transform:uppercase;
+ opacity: 1;
+ line-height:2.8;
+ }
+ 
+.form-functions input:-ms-input-placeholder{
+ font-family: PT Sans;
+ color:var(--basic-black);
+ font-size:14px;
+ line-height:26px;
+ font-weight:bold;
+ text-transform:uppercase;
+ opacity: 1;
+ line-height:2.8;
+ }
+ 
+ .kids-column {
+ padding-right:8px;
+}
+ 
 .arrival-date {
- padding-top:51px;
+ padding-top:53px;
  padding-left: 55px;
 } 
 
@@ -865,9 +918,7 @@ color:var(--baslight-blue);
  padding-top:29px;
 }
 
-.kids-column {
- padding-right:8px;
-}
+
 
 .number-of-children .plus-button {
  background-color:transparent;
@@ -929,7 +980,7 @@ color:var(--baslight-blue);
  background-color:var( --button-light);
  width:568px;
  height:86px;
- margin-bottom:-10px;
+ margin-bottom:-15px;
 }
 
 .search:hover,
@@ -948,8 +999,8 @@ color:var(--baslight-blue);
 
 .cell {
  background-color:var(--light-gray);
- border:none;
  color:var(--basic-black);
+ border:none;
  font-size:14px;
  line-height:26px;
  font-weight:bold;
@@ -962,6 +1013,7 @@ color:var(--baslight-blue);
  font-size:14px;
  line-height:26px;
  font-weight:bold;
+ text-transform:uppercase;
  } 
 
 .cell-big {
@@ -1324,7 +1376,6 @@ color:var(--baslight-blue);
  background-color:var(translucent-white);
  margin:0 auto;
  width:1200px;
- height: 120px;
 }
 
 .map-sedona {
@@ -1336,8 +1387,9 @@ color:var(--baslight-blue);
  display:flex;
  justify-content:space-between;
  align-items:center;
+ flex-wrap:wrap;
  position:absolute;
- top:2645px;
+ top:2642px;
  background-color:var(--translucent-white);
  width:1200px;
  min-height:120px;
@@ -1347,10 +1399,10 @@ color:var(--baslight-blue);
  display:flex;
  justify-content:space-between;
  align-items:center;
+ flex-wrap:wrap;
  background-color:var(--translucent-white);
  width:1200px;
  min-height:120px;
- margin-top:4px;
 }
 
 .contacts {
@@ -1362,12 +1414,12 @@ color:var(--baslight-blue);
  min-height:52px;
  text-align:center;
  margin-left:111px;
- margin-bottom:11px;
+ margin-bottom:5px;
 }
 
 .contacts p {
  margin:0;
- padding-bottom:10px;
+ padding-bottom:9px;
 }
 
 .tel {
@@ -1377,7 +1429,6 @@ color:var(--baslight-blue);
 .buttons {
  position:relative;
  right:16px;
- bottom:3px;
 }
 
 .navigation-basement {
@@ -1390,7 +1441,7 @@ color:var(--baslight-blue);
 
 .navigation-basement li:nth-child(1),
 .navigation-basement li:nth-child(2){
- padding-right: 6px;
+ padding-right:6px;
 }
 
 .social-button {
@@ -1421,7 +1472,7 @@ color:var(--baslight-blue);
  font-weight:normal;
  position:relative;
  right:5px;
- top:2px;
+ top:4px;
 }
 
 .partner{
@@ -1432,7 +1483,7 @@ color:var(--baslight-blue);
 .academy-logo {
  display:inline;
  position:relative;
- top:15px;
+ top:17px;
 }
 
 .active-button:hover path,

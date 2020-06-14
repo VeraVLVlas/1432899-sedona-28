@@ -5,11 +5,12 @@
  <title>Sedona</title>
  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
  <link href="normalize.css" rel="stylesheet">
- <link href="css/style.css" rel="stylesheet">
+ <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
 
+<div class="shadow">
  <header class="top-of-page">
   <nav class="site-navigation">
 	<div class="logo">
@@ -35,12 +36,11 @@
  
  
  <main class="mid-page">
-  <div class="mid-wrapper">
   <h1 class="visually-hidden">Седона</h1>
   <section>
    <h2 class="visually-hidden">Преимущества Седоны</h2>
    <div class="advantages">
-    <h3 class="introduction">Седона&#8212небольшой городок в Аризоне,
+    <h3 class="introduction">Седона&#8212;небольшой городок в Аризоне,<br>
 	заслуживающий большего! 
 	</h3>
 	<p class="description-sedona">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
@@ -113,7 +113,6 @@
 	 </div>
 	</div>  
 	</li>
-	<div class="point-four">
 	<li class="gray-background">
 	 <div>
 	  <h3 class="description-of-benefits">
@@ -156,7 +155,6 @@
 	  </div>
 	 </div>
 	</li>
-	</div>
    </ul>
   </div>
   
@@ -179,7 +177,7 @@
     <p class="arrival-date">
 	 <label for="check-in" class="text">Дата заезда: </label>
 	 <input type="text" class="cell cell-big" id="check-in" name="arrival-date" placeholder="24 апреля 2017">
-	 <button type="button" class="button-element"aria-label="календарь">
+	 <button type="button" class="button-element" aria-label="календарь">
 	  <svg width="21" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
 	   <path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.025h2.845c.966 0 1.749.822 1.749 1.837v16.302C21 22.179 20.217 23 19.251 
 	   23H1.75C.784 23 0 22.179 0 21.164V4.862c0-1.015.784-1.837 1.75-1.837h2.843V1.648c0-.381.294-.689.657-.689.362 
@@ -217,7 +215,7 @@
 	   <path fill="#A9A9A9" d="M0 0h12v3H0z"/>
 	  </svg>
 	</button>
-	<input type="text" class="cell cell-little" min="1" max="50" step="1" id="adults" name="number-of-adults" placeholder="2">
+	<input type="text" class="cell cell-little" id="adults" name="number-of-adults" placeholder="2">
 	<button type="button" class="plus-button" aria-label="добавить">
 	 <svg width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
 	  <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23 6.77V11h2.54V6.77H11V4.23H6.77V0H4.23v4.23H0v2.54h4.23z" fill="#A9A9A9"/>
@@ -231,7 +229,7 @@
 	    <path fill="#A9A9A9" d="M0 0h12v3H0z"/>
 	   </svg>
 	 </button>
-	 <input type="text" class="cell cell-little" min="1" max="50" step="1" id="children" name="amount-of-children" placeholder="0">
+	 <input type="text" class="cell cell-little" id="children" name="amount-of-children" placeholder="0">
 	 <button type="button" class="plus-button" aria-label="добавить">
 	  <svg width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
 	   <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23 6.77V11h2.54V6.77H11V4.23H6.77V0H4.23v4.23H0v2.54h4.23z" fill="#A9A9A9"/>
@@ -241,8 +239,8 @@
 	<button type="submit" class="button to-find">
 	 <span class="to-find-1">Найти</span>
 	</button>
+	</div>
    </form>
-   </div>
   </main>
   
   <footer class="page-footer main-footer"> 
@@ -326,6 +324,6 @@
     </div>
    </div>
   </footer>
- 
+ </div>
 </body>
 </html>
