@@ -5,7 +5,7 @@
  <title>Sedona</title>
  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
  <link href="normalize.css" rel="stylesheet">
- <link href="css/style.min.css" rel="stylesheet">
+ <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -191,7 +191,7 @@
 	  </svg>
 	 </button>
 	</p>
-	<p>
+	<p class="departure-date">
 	 <label for="check-out" class="text date-of-departure">Дата выезда: </label>
 	 <input type="text" class="cell cell-big" id="check-out" name="date-of-departure" placeholder="4 июля 2017">
 	 <button type="button" class="button-element" aria-label="календарь">
@@ -208,6 +208,7 @@
 	  </svg>
 	 </button>
 	</p>
+	<div class="bottom-filter-1">
 	<p class="number-of-adults">
 	<label for="adults" class="text">Взрослые: </label>
 	<button type="button" class="minus-button" aria-label="уменьшить">
@@ -223,7 +224,7 @@
 	</button>
 	</p>
 	<p class="number-of-children">
-	 <label for="children" class="kids-column">Дети: </label>
+	 <label for="children" class="kids-column">Дети:</label>
 	  <button type="button" class="minus-button" aria-label="уменьшить">
 	   <svg width="12" height="3" fill="none" xmlns="http://www.w3.org/2000/svg">
 	    <path fill="#A9A9A9" d="M0 0h12v3H0z"/>
@@ -236,6 +237,7 @@
 	  </svg>
 	 </button>
 	</p>
+	</div>
 	<button type="submit" class="button to-find">
 	 <span class="to-find-1">Найти</span>
 	</button>

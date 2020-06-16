@@ -824,7 +824,6 @@ color:var(--baslight-blue);
  font-weight:bold;
  text-transform:uppercase;
  opacity: 1;
- line-height:2.8;
  }
 
 .form-functions input::-moz-placeholder{
@@ -835,7 +834,6 @@ color:var(--baslight-blue);
  font-weight:bold;
  text-transform:uppercase;
  opacity: 1;
- line-height:2.8;
  }
 
 .form-functions input:-moz-placeholder{
@@ -845,8 +843,7 @@ color:var(--baslight-blue);
  line-height:26px;
  font-weight:bold;
  text-transform:uppercase;
- opacity: 1;
- line-height:2.8;
+ opacity:1;
  }
  
 .form-functions input:-ms-input-placeholder{
@@ -856,8 +853,7 @@ color:var(--baslight-blue);
  line-height:26px;
  font-weight:bold;
  text-transform:uppercase;
- opacity: 1;
- line-height:2.8;
+ opacity:1;
  }
  
  .kids-column {
@@ -866,14 +862,14 @@ color:var(--baslight-blue);
  
 .arrival-date {
  padding-top:53px;
- padding-left: 55px;
+ padding-left:55px;
 } 
 
 .arrival-date label {
  padding-right: 20px;
 }
 
-.form-functions p:nth-child(2){
+.departure-date{
  padding-left: 55px;
  padding-top: 30px;
 }
@@ -889,11 +885,16 @@ color:var(--baslight-blue);
 
 .number-of-adults {
  padding-top:28px;
- padding-left:55px;
+}
+
+.number-of-adults input {
+ min-width:36px;
+ min-height:26px;
 }
 
 .number-of-adults label{
- padding-right:20px;
+ padding-right: 22px;
+
 }
 
 .number-of-adults .plus-button {
@@ -913,20 +914,27 @@ color:var(--baslight-blue);
  left:30px;
 }
 
-.number-of-children{
- padding-left:29px;
- padding-top:29px;
+.bottom-filter-1 {
+ width:460px;
+ display:flex;
+ margin:0 auto;
+ justify-content: space-between;
+ 
 }
 
-
+.number-of-children{
+ width:180px;
+ padding-top:29px;
+ text-align:right;
+}
 
 .number-of-children .plus-button {
  background-color:transparent;
  border:none;
  padding:0;
  position:relative;
- right:28px;
- top:2px;
+ right:14px;
+ top:-26px;
 }
 
 .number-of-children .minus-button {
@@ -1016,20 +1024,27 @@ color:var(--baslight-blue);
  text-transform:uppercase;
  } 
 
+
+
 .cell-big {
- width:346px;
- height:38px;
+ /*width:346px;
+ height:38px;*/
  text-transform:uppercase;
  line-height:26px;
- padding-left:13px;
+ padding-left: 13px;
+ padding-top: 6px;
+ padding-bottom:6px;
+ padding-right:145px;
 }
 
 .cell-little {
- width: 114px;
- height: 38px;
  text-transform:uppercase;
  line-height:26px;
  text-align:center;
+ width:114px;
+ padding-top: 6px;
+ padding-bottom:6px;
+ 
 }
 
 .cell:active, 
@@ -1045,12 +1060,12 @@ color:var(--baslight-blue);
 
 .cell:focus {
  background-color:var(--basic-white);
- border: 2px solid var(--gray-frame);
+ outline:2px solid var(--gray-frame);
 }
 
 .cell:active {
  background-color:var(--basic-white);
- border: 2px solid var(--gray-frame);
+ outline:2px solid var(--gray-frame);
 }
 
 .element {
@@ -1070,8 +1085,8 @@ color:var(--baslight-blue);
  width:458px;
  height:58px;
  background-color:var(--baslight-blue);
- margin-left: 55px;
- margin-top: 55px;
+ margin-left:55px;
+ margin-top:34px;
 }
 
 .to-find-1 {
