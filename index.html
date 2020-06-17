@@ -22,7 +22,7 @@
       <li><a href="#">Информация</a></li>
       <li><a href="#">Фото и видео</a></li>
       <li><a href="#">Карта штата</a></li>
-      <li class="the-only"><a href="catalog.html">Гостиницы</a></li>
+      <li><a href="catalog.html">Гостиницы</a></li>
      </ul>
 	</div>
   </div>
@@ -167,16 +167,16 @@
    </p>
    </div>
    <div>
-    <button type="button" class="button search"><span>Поиск гостиницы в Седоне</span></button>
+    <button type="button" class="button-search button search"><span>Поиск гостиницы в Седоне</span></button>
    </div>
   </section>
    
-  
+   <section class="interactive-form">
    <form action="https://echo.htmlacademy.ru" method="post" class="form">
    <div class="form-functions">
     <p class="arrival-date">
 	 <label for="check-in" class="text">Дата заезда: </label>
-	 <input type="text" class="cell cell-big" id="check-in" name="arrival-date" placeholder="24 апреля 2017">
+	 <input type="text" class="cell cell-big cell-first" id="check-in" name="arrival-date" placeholder="24 апреля 2017" required>
 	 <button type="button" class="button-element" aria-label="календарь">
 	  <svg width="21" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
 	   <path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.025h2.845c.966 0 1.749.822 1.749 1.837v16.302C21 22.179 20.217 23 19.251 
@@ -193,7 +193,7 @@
 	</p>
 	<p class="departure-date">
 	 <label for="check-out" class="text date-of-departure">Дата выезда: </label>
-	 <input type="text" class="cell cell-big" id="check-out" name="date-of-departure" placeholder="4 июля 2017">
+	 <input type="text" class="cell cell-big" id="check-out" name="date-of-departure" placeholder="4 июля 2017" required>
 	 <button type="button" class="button-element" aria-label="календарь">
 	  <svg width="21" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
 	   <path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.025h2.845c.966 0 1.749.822 1.749 1.837v16.302C21 22.179 20.217 23 19.251 23H1.75C.784 23 0
@@ -216,7 +216,7 @@
 	   <path fill="#A9A9A9" d="M0 0h12v3H0z"/>
 	  </svg>
 	</button>
-	<input type="text" class="cell cell-little" id="adults" name="number-of-adults" placeholder="2">
+	<input type="text" class="cell cell-little" id="adults" name="number-of-adults" placeholder="2" required>
 	<button type="button" class="plus-button" aria-label="добавить">
 	 <svg width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
 	  <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23 6.77V11h2.54V6.77H11V4.23H6.77V0H4.23v4.23H0v2.54h4.23z" fill="#A9A9A9"/>
@@ -230,7 +230,7 @@
 	    <path fill="#A9A9A9" d="M0 0h12v3H0z"/>
 	   </svg>
 	 </button>
-	 <input type="text" class="cell cell-little" id="children" name="amount-of-children" placeholder="0">
+	 <input type="text" class="cell cell-little" id="children" name="amount-of-children" placeholder="0" required>
 	 <button type="button" class="plus-button" aria-label="добавить">
 	  <svg width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
 	   <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23 6.77V11h2.54V6.77H11V4.23H6.77V0H4.23v4.23H0v2.54h4.23z" fill="#A9A9A9"/>
@@ -243,6 +243,7 @@
 	</button>
 	</div>
    </form>
+  </section>
   </main>
   
   <footer class="page-footer main-footer"> 
