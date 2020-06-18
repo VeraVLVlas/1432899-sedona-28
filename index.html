@@ -4,8 +4,8 @@
  <meta charset="utf-8">
  <title>Sedona</title>
  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
- <link href="normalize.css" rel="stylesheet">
- <link href="css/style.css" rel="stylesheet">
+ <link href="css/normalize.css" rel="stylesheet">
+ <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -172,6 +172,7 @@
   </section>
    
    <section class="interactive-form">
+    <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
    <form action="https://echo.htmlacademy.ru" method="post" class="form">
    <div class="form-functions">
     <p class="arrival-date">
@@ -248,7 +249,13 @@
   
   <footer class="page-footer main-footer"> 
    <section class="map-sedona"> 
-    <img src="img/map.png" width="1200" height="594" alt="Карта с геолокацией города Седона" >
+    <h2 class="visually-hidden">Карта, как добраться до Седоны</h2>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.4975414955743!2d-111.76252352206208!3d34.86885055003477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da15809a0dee3%3A0x22ca556fbe412052!2sSedona%20%2F%20Red%20Rock%20Country!5e0!3m2!1sru!2sru!4v1592493939234!5m2!1sru!2sru"
+	width="1200" height="594" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+	</iframe>
+    <p class="map">
+	<img src="img/map.png" width="1200" height="594" alt="Карта с геолокацией города Седона" >
+	</p>
    </section>
    <div class="basement-card">
     <div class="contacts">
@@ -328,6 +335,6 @@
    </div>
   </footer>
  </div>
- <script src="js/app.js"></script>
+ <script src="js/app.mini.js"></script>
 </body>
 </html>

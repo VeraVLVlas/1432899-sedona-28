@@ -809,11 +809,14 @@ img {
 .interactive-form {
  display:block;
  animation: bounce 1.5s;
+ position:relative;
+ z-index:4;
 }
 
 .form {
  position:absolute;
  left:50%;
+ z-index:4;
  transform: translateX(-50%);
  background-color:var(--basic-white);
  padding-top:53px;
@@ -1457,7 +1460,6 @@ input:focus:-ms-input-placeholder {
 }
 
 .page-footer {
- background-color:var(translucent-white);
  margin:0 auto;
  width:1200px;
 }
@@ -1467,6 +1469,21 @@ input:focus:-ms-input-placeholder {
  height:594px;
 }
 
+.map-sedona p {
+  margin: 0;
+}
+
+.map-sedona iframe {
+ position: relative;
+ z-index:2;
+}
+
+.map {
+ position:absolute;
+ z-index:1;
+ top:2170px;
+}
+  
 .basement-card {
  display:flex;
  justify-content:space-between;
@@ -1474,6 +1491,7 @@ input:focus:-ms-input-placeholder {
  flex-wrap:wrap;
  position:absolute;
  top:2642px;
+ z-index:3;
  background-color:var(--translucent-white);
  width:1200px;
  min-height:120px;
