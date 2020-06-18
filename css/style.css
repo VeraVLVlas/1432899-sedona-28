@@ -808,7 +808,7 @@ img {
 
 .interactive-form {
  display:block;
- /*animation: bounce 1.5s;*/
+ animation: bounce 1.5s;
 }
 
 .form {
@@ -822,7 +822,7 @@ img {
  padding-left:57px;
 }
 
-/*
+
 .form-hide {
  display:none;
 }
@@ -848,7 +848,7 @@ img {
     transform: translateY(0);
   }
 }
-*/
+
 
 .form-functions {
  display:flex;
