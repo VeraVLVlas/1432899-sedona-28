@@ -807,7 +807,7 @@ img {
 }
 
 .interactive-form {
- display:block;
+ display:none;
  animation: bounce 1.5s;
  position:relative;
  z-index:4;
@@ -827,7 +827,7 @@ img {
 
 
 .form-hide {
- display:none;
+ display:block;
 }
 
 @keyframes bounce {
