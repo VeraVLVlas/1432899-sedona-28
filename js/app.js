@@ -23,9 +23,11 @@ try {
   isStorageSupport = false;
 }
 
+form.classList.add("form-hide");
+
 searchButton.addEventListener("click", function () {
-	form.classList.toggle(".interactive-form");
 	form.classList.toggle("form-hide");
+	form.classList.toggle(".interactive-form");
 	cell.focus();
 });
 
