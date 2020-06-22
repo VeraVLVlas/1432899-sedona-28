@@ -28,42 +28,42 @@
 }
 
 body {
- min-width:1200px;  /*почему не 1280*/
+ min-width:1200px; 
  margin:0;
  padding:0;
  font-family:"PT Sans", Arial, sans-serif;
  font-size:14px;
  line-height:21px;
  font-weight:700;
- color: var(--basic-black);
- text-transform: uppercase;
- background-color: var(--light-gray);
+ color:var(--basic-black);
+ text-transform:uppercase;
+ background-color:var(--light-gray);
 }
 
 a {
- text-decoration: none;
+ text-decoration:none;
 }
 
 img {
- max-width: 100%;
- height: auto;
+ max-width:100%;
+ height:auto;
 }
 
 .shadow{
- box-shadow: 0 0 5px;
+ box-shadow:0 0 5px;
  width:1200px;
  margin:0 auto;
 }
 
 .page {
-  height: 100%;
+  height:100%;
 }
 
 .page-body {
-  min-height: 100%;
-  display: grid;
+  min-height:100%;
+  display:grid;
   grid-template-rows: min-content 1fr min-content;
-  align-content: start;
+  align-content:start;
 }
 
 .top-of-page {
@@ -101,7 +101,7 @@ img {
 }
 
 .navigation li:nth-child(2){
- margin-right: 150px;
+ margin-right:150px;
 }
 
 .navigation li:nth-child(3),
@@ -110,22 +110,22 @@ img {
 }
 
 .navigation li:nth-child(3){
- margin-left: 7px;
+ margin-left:7px;
 }
 
 .navigation-links {
- max-width: 1200px;
- margin: 0 auto;
+ max-width:1200px;
+ margin:0 auto;
 }
 
 .photo-sedona{
- background-color: var(--basic-black);
- background-image: url('../img/background.jpg');
- background-repeat: no-repeat;
- background-size: 100%;
+ background-color:var(--basic-black);
+ background-image:url('../img/background.jpg');
+ background-repeat:no-repeat;
+ background-size:100%;
  width:1200px;
- height: 509px;
- margin: 0 auto;
+ height:509px;
+ margin:0 auto;
 }
 
 .inscription {
@@ -144,24 +144,24 @@ img {
 
 .inscription::after{ 
  content:"";
- background-image: url('../img/visor.png');
- background-repeat: no-repeat;
- background-size: 100%;
- width: 1200px;
- height: 57px;
+ background-image:url('../img/visor.png');
+ background-repeat:no-repeat;
+ background-size:100%;
+ width:1200px;
+ height:57px;
  margin-top:451px;
 }
 
 .site-navigation {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
 }
 
 .site-navigation a{
-  line-height: 26px;
-  color: var(--basic-black);
-  background-color: transparent;
+  line-height:26px;
+  color:var(--basic-black);
+  background-color:transparent;
 }
 
 .navigation-list {
@@ -174,7 +174,7 @@ img {
 .navigation-list,
 .navigation-basement,
 .search-filter {
- list-style: none;
+ list-style:none;
 }
 
 .working a:hover,
@@ -184,7 +184,7 @@ img {
 
 .working a:active {
  color:var(--basic-black);
- opacity: 0.3; 
+ opacity:0.3; 
 }
 
 .the-only a:visited {
@@ -218,15 +218,15 @@ img {
 
 .hotel a {
  color:var(--basic-black);
- font-size: 21px;
- line-height: 26px;
+ font-size:21px;
+ line-height:26px;
 }
 
 .description h3,
 .found h3 {
- font-weight: bold;
- font-size: 21px;
- line-height: 26px;
+ font-weight:700;
+ font-size:21px;
+ line-height:26px;
  margin:0;
 }
 
@@ -238,9 +238,9 @@ img {
 }
 
 .sorting {
- font-weight: normal;
- font-size: 12px;
- line-height: 18px;
+ font-weight:400;
+ font-size:12px;
+ line-height:18px;
  margin-top:31px;
  margin-right:40px;
  margin-bottom:37px;
@@ -282,13 +282,13 @@ img {
 
 .description a:active {
  color:var(--basic-black);
- opacity: 0.3; 
+ opacity:0.3; 
 }
 
 .cost {
  font-size:14px;
  line-height:21px;
- font-weight:normal;
+ font-weight:400;
  color:var( --basic-dark-grey);
  margin-bottom:15px;
 }
@@ -311,6 +311,7 @@ img {
 
 .blue {
  display:inline-block;
+ vertical-align:middle;
 }
 
 .blue a {
@@ -343,18 +344,19 @@ img {
 
 .details {
  color:var(--basic-white);
- font-size: 14px;
- line-height: 21px;
+ font-size:14px;
+ line-height:21px;
 }
 
 .details:active {
  color:var(--basic-white);
- opacity: 0.3;
+ opacity:0.3;
 }
 
 .dark-grey {
  display:inline-block;
  margin-left:4px;
+ vertical-align:middle;
 }
 
 .dark-grey a { 
@@ -373,28 +375,28 @@ img {
 
 .to-book {  
  color:var(--basic-white);
- font-size: 14px;
- line-height: 21px;
+ font-size:14px;
+ line-height:21px;
 }
 
 .to-book:active {
  color:var(--basic-white);
- opacity: 0.3;
+ opacity:0.3;
 }
 
 .container{
- margin-top: 27px;
+ margin-top:27px;
  margin-right:73px;	
 }
 
 .rating-1{
  background-color:var(--light-gray);
- width: 110px;
- height: 27px;
+ width:110px;
+ height:27px;
  color:var(--classic-gray);
- font-weight: normal;
- font-size: 14px;
- line-height: 21px;
+ font-weight:400;
+ font-size:14px;
+ line-height:21px;
  padding-top:3px;
  padding-right:12px;
  padding-bottom:3px;
@@ -409,7 +411,7 @@ img {
  width:110px;
  height:27px;
  color:var(--classic-gray);
- font-weight:normal;
+ font-weight:400;
  font-size:14px;
  line-height:21px;
  padding-top:3px;
@@ -426,7 +428,7 @@ img {
  width:110px;
  height:27px;
  color:var(--classic-gray);
- font-weight:normal;
+ font-weight:400;
  font-size:14px;
  line-height:21px;
  padding-top:3px;
@@ -455,8 +457,8 @@ img {
  content:"";
  background-image:url('../img/star.svg');
  background-size:20px;
- background-repeat: space;
- display: block;
+ background-repeat:space;
+ display:block;
  width:70px;
  height:30px;
  position:relative;
@@ -483,14 +485,14 @@ img {
 }
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
+  position:absolute;
+  width:1px;
+  height:1px;
+  margin:-1px;
+  border:0;
+  padding:0;
   clip: rect(0 0 0 0);
-  overflow: hidden;
+  overflow:hidden;
 }
 
 .point-one {
@@ -515,8 +517,8 @@ img {
  align-items:center;
  flex-wrap:wrap;
  background-color:var(--baslight-blue);
- width: 400px;
- min-height: 256px;
+ width:400px;
+ min-height:256px;
 }
 
 .insertion {
@@ -550,7 +552,7 @@ img {
 .insert-description {
  color:var( --basic-white);
  text-align:center;
- font-weight:normal;
+ font-weight:400;
 }
 
 .number-one{
@@ -573,14 +575,14 @@ img {
 
 .sentence {
  color:var(--basic-dark-grey);
- font-weight:normal;
+ font-weight:400;
  text-align:center;
  margin:0;
  padding-top:12px;
 }
 
 .about-souvenirs {
- padding-bottom: 7px;
+ padding-bottom:7px;
 }
 
 .filter-button:hover path { 
@@ -597,17 +599,17 @@ img {
 
 .starf{
  display:flex;
- flex-direction: row;
- justify-content: space-between;
+ flex-direction:row;
+ justify-content:space-between;
  align-items:flex-start;
  flex-wrap:wrap;
  width:1200px;
  min-height:153px;
  margin:0 auto;
  background-color:var(--basic-white);
- border-bottom-width: 1px; 
- border-bottom-style: solid; 
- border-bottom-color: var(--gray-frame);
+ border-bottom-width:1px; 
+ border-bottom-style:solid; 
+ border-bottom-color:var(--gray-frame);
 }
 
 .stars {
@@ -742,14 +744,14 @@ img {
  line-height:26px;
  padding-top:22px;
  margin:0;
- width: 470px;
+ width:470px;
  min-height:80px;
  text-align:center;
 }
 
 .description{
- margin-top: 23px;
- margin-bottom: 7px;
+ margin-top:23px;
+ margin-bottom:7px;
 }
 
 .description a {
@@ -759,7 +761,7 @@ img {
 .description-sedona {
  line-height: 26px;
  color:var(--basic-dark-grey); 
- font-weight: normal;
+ font-weight:400;
  text-align:center;
  margin:0;
  margin-bottom:33px;
@@ -785,8 +787,8 @@ img {
  display:flex;
  flex-direction:column;
  align-items:center;
- line-height: 24px;
- font-weight: normal;
+ line-height:24px;
+ font-weight:400;
  color:var(--basic-dark-grey);
  text-align:center;
  margin:0;
@@ -797,11 +799,11 @@ img {
 }
 
 .button {
- font: inherit;
- text-align: center;
- color: var(--basic-white);
- text-transform: uppercase;
- vertical-align: middle;
+ font:inherit;
+ text-align:center;
+ color:var(--basic-white);
+ text-transform:uppercase;
+ vertical-align:middle;
  border: none;
  outline:none;
 }
@@ -851,7 +853,6 @@ img {
   }
 }
 
-
 .form-functions {
  display:flex;
  flex-direction:column;
@@ -872,9 +873,9 @@ img {
  color:var(--basic-black);
  font-size:14px;
  line-height:26px;
- font-weight:bold;
+ font-weight:700;
  text-transform:uppercase;
- opacity: 1;
+ opacity:1;
  }
 
 .form-functions input::-moz-placeholder{
@@ -882,9 +883,9 @@ img {
  color:var(--basic-black);
  font-size:14px;
  line-height:26px;
- font-weight:bold;
+ font-weight:700;
  text-transform:uppercase;
- opacity: 1;
+ opacity:1;
  }
 
 .form-functions input:-moz-placeholder{
@@ -892,7 +893,7 @@ img {
  color:var(--basic-black);
  font-size:14px;
  line-height:26px;
- font-weight:bold;
+ font-weight:700;
  text-transform:uppercase;
  opacity:1;
  }
@@ -902,7 +903,7 @@ img {
  color:var(--basic-black);
  font-size:14px;
  line-height:26px;
- font-weight:bold;
+ font-weight:700;
  text-transform:uppercase;
  opacity:1;
  }
@@ -928,17 +929,17 @@ input:focus:-ms-input-placeholder {
 }
 
 .arrival-date label {
- width: 110px;
+ width:110px;
  padding-right:21px;
 }
 
 .arrival-date {
- width: 461px;
+ width:461px;
 }
 
 .date-of-departure {
  padding-right:17px;
- width: 110px;
+ width:110px;
 }
 
 .text,
@@ -1018,8 +1019,8 @@ input:focus:-ms-input-placeholder {
  border:none;
  outline:none;
  position:relative;
- left: 210px;
- bottom: 30px;
+ left:210px;
+ bottom:30px;
  padding:0;
 }
 
@@ -1079,7 +1080,7 @@ input:focus:-ms-input-placeholder {
  color:var(--basic-black);
  border:none;
  font-size:14px;
- font-weight: bold;
+ font-weight:700;
 }
 
 .cell::placeholder {
@@ -1087,7 +1088,7 @@ input:focus:-ms-input-placeholder {
  color:var(--basic-black);
  font-size:14px;
  line-height:26px;
- font-weight:bold;
+ font-weight:700;
  text-transform:uppercase;
  } 
 
@@ -1106,7 +1107,7 @@ input:focus:-ms-input-placeholder {
  line-height:26px;
  text-align:center;
  width:114px;
- padding-top: 6px;
+ padding-top:6px;
  padding-bottom:6px;
  
 }
@@ -1138,7 +1139,7 @@ input:focus:-ms-input-placeholder {
 
 .element:hover,
 .element:focus{
- color:var( --basic-black);
+ color:var(--basic-black);
 }
 
 .element:active {
@@ -1297,14 +1298,14 @@ input:focus:-ms-input-placeholder {
 
 .services {
  color:var(--basic-white);
- font-weight:normal;
+ font-weight:400;
  text-transform:uppercase;
 }
 
 .transparent {
  background-color:transparent;
  color:var(--basic-white);
- font-weight:normal;
+ font-weight:400;
  line-height:21px;
  border: 2px solid var(--basic-white);
  box-sizing:border-box;
@@ -1370,7 +1371,7 @@ input:focus:-ms-input-placeholder {
  background-repeat:no-repeat;
  width:19px;
  height:21px;
- cursor: pointer;
+ cursor:pointer;
 }
 
 .range-controls .toggle-min {
@@ -1395,7 +1396,7 @@ input:focus:-ms-input-placeholder {
 .display {
  background-color:transparent;
  color:var(--basic-white);
- font-weight:normal;
+ font-weight:400;
  line-height:21px;
  text-transform:uppercase;
  border:2px solid var(--basic-white);
@@ -1404,15 +1405,15 @@ input:focus:-ms-input-placeholder {
  width:137px;
  height:36px;
  margin-left:397px;
- position: relative;
- bottom: 5px;
+ position:relative;
+ bottom:5px;
 }
 
 .display:hover,
 .display:focus {
  background-color:var(--basic-white);
  color:var(--basic-black);
- font-weight:normal;
+ font-weight:400;
  font-size:14px;
  line-height:21px;
  outline:none;
@@ -1435,7 +1436,7 @@ input:focus:-ms-input-placeholder {
  color:var(--gray-special);
  font-size:12px;
  line-height:18px;
- font-weight:normal;
+ font-weight:400;
  border-bottom:1px dotted var(--baslight-blue);
 }
 
@@ -1452,9 +1453,9 @@ input:focus:-ms-input-placeholder {
 
 .price a{
  color:var(--baslight-blue);
- font-size: 12px;
- line-height: 18px;
- font-weight: normal;
+ font-size:12px;
+ line-height:18px;
+ font-weight:400;
  border-bottom:none;
 }
 
@@ -1469,7 +1470,7 @@ input:focus:-ms-input-placeholder {
 }
 
 .map-sedona p {
-  margin: 0;
+  margin:0;
 }
 
 .map-sedona iframe {
@@ -1546,9 +1547,9 @@ input:focus:-ms-input-placeholder {
 }
 
 .social-button {
- display: flex;
- align-items: center;
- justify-content: center;
+ display:flex;
+ align-items:center;
+ justify-content:center;
  background-color:var(--baslight-blue);
  width:46px;
  height:48px;
@@ -1560,7 +1561,6 @@ input:focus:-ms-input-placeholder {
 .fb:focus,
 .youtube:focus{
  background-color:var(--classic-blue);
- 
 }
 
 .social-networks:focus a{
@@ -1577,8 +1577,9 @@ input:focus:-ms-input-placeholder {
 
 .made {
  display:inline-block;
+ vertical-align:middle;
  line-height:26px;
- font-weight:normal;
+ font-weight:400;
  position:relative;
  right:5px;
  top:4px;
@@ -1601,9 +1602,9 @@ input:focus:-ms-input-placeholder {
 
 .active-button:hover path,
 .active-button:focus path{
-  fill: var(--baslight-blue);
+ fill: var(--baslight-blue);
 }
 
 .active-button:active path { 
- fill: var(--grey);
+ fill:var(--grey);
 }
