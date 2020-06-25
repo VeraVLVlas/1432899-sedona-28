@@ -25,8 +25,8 @@
  --button-light:#766357;
  --button-classic:#604E43;
  --button-dark:#503E33;
-}
-
+}		
+	
 body {
  min-width:1200px; 
  margin:0;
@@ -38,6 +38,9 @@ body {
  color:var(--basic-black);
  text-transform:uppercase;
  background-color:var(--light-gray);
+	/* min-height: 100%;
+     display: grid;
+     grid-template-rows:1fr auto;*/
 }
 
 a {
@@ -59,11 +62,10 @@ img {
   height:100%;
 }
 
-.page-body {
-  min-height:100%;
-  display:grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content:start;
+	.page-body {
+		min-height:100%;
+		display:grid;
+		grid-template-rows: min-content 1fr min-content;
 }
 
 .top-of-page {
@@ -290,11 +292,11 @@ img {
  line-height:21px;
  font-weight:400;
  color:var( --basic-dark-grey);
- margin-bottom:15px;
+ margin-bottom:14px;
 }
 
 .about-the-hotel-1 .view-hotel{
- margin-bottom:17px;
+ margin-bottom:16px;
 }
 
 .price-of-service{
@@ -499,13 +501,13 @@ img {
  display:flex;
  justify-content:space-between;
  width:1200px;
- height:256px;
+ min-height:256px;
 }
 
 .point-two {
  display: grid;
  grid-template-columns: 1fr 1fr 1fr;
- align-items:center;
+ /*align-items:center;*/
  background-color:var(--basic-white);
  width:1200px;
  min-height:330px;
@@ -514,7 +516,6 @@ img {
 .list {
  display:flex;
  flex-direction:column;
- align-items:center;
  flex-wrap:wrap;
  background-color:var(--baslight-blue);
  width:400px;
@@ -528,6 +529,11 @@ img {
  text-align:center;
  margin:0;
  padding-top:45px;
+ min-height: 43px;
+}
+
+.city-​​photo {
+ display:flex;
 }
 
 .bridge {
@@ -570,7 +576,8 @@ img {
  line-height:21px;
  text-align:center;
  margin:0;
- padding-top:19px;
+ /*padding-top:19px;*/
+ padding-bottom: 11px;
 }
 
 .sentence {
@@ -578,7 +585,7 @@ img {
  font-weight:400;
  text-align:center;
  margin:0;
- padding-top:12px;
+ /*padding-top:12px;*/
 }
 
 .about-souvenirs {
@@ -646,7 +653,7 @@ img {
 .photo-desert,
 .photo-villas {
  padding-left:73px;
- padding-top:30px;
+ padding-top:29px;
 }
 
 .about-the-hotel-1 {
@@ -667,30 +674,36 @@ img {
  content:"";
  background-image:url('../img/icon-1.svg');
  background-repeat:no-repeat;
- position:relative;
- bottom:10px;
+ /*position:relative;
+ top:-10px;*/
  width:75px;
  height:72px;
+    margin-top: 60px;
+    margin-bottom: 28px;
 }
 
 .food-description::before{
  content:"";
  background-image:url('../img/icon-3.svg');
  background-repeat:no-repeat;
- position:relative;
- bottom:10px;
+/* position:relative;
+ bottom:10px;*/
  width:75px;
  height:70px;
+   margin-top: 60px;
+    margin-bottom: 28px;
 }
 
 .souvenir::before {
  content:"";
  background-image:url('../img/icon-2.svg');
  background-repeat:no-repeat;
- position:relative;
- bottom:9px;
+ /*position:relative;
+ bottom:9px;*/
  width:64px;
  height:77px;
+   margin-top: 54px;
+    margin-bottom: 27px;
 }
 
 .housing-description,
@@ -698,15 +711,16 @@ img {
 .souvenir {
  display:flex;
  flex-direction:column;
- justify-content:center;
+ /*justify-content:center;*/
  align-items:center;
+ flex-wrap:wrap;
 }
 
 .point-three{
  display:flex;
  justify-content:space-between;
  width:1200px;
- height:256px;
+ min-height:256px;
 }
 
 .description-of-benefits {
@@ -714,24 +728,28 @@ img {
  line-height:21px;
  text-align:center;
  margin:0;
- padding-top:5px;
+ /*padding-top:5px;*/
+   padding-top: 47px;
+    padding-bottom: 25px;
 }
 
 .detailed{
+    margin:0;
  padding-top:24px;
 }
 
+/*
 .number-three,
 .number-four,
 .number-five {
  position:relative;
  top:15px;
-}
+}*/
 
 .gray-background {
  display:flex;
  flex-direction:column;
- justify-content:center;
+/* justify-content:center;*/
  align-items:center;
  background-color:var(--gray-frame);
  height: 256px;
@@ -1175,10 +1193,17 @@ input:focus:-ms-input-placeholder {
  opacity:0.3;
 }
 
+.board {
+ border-bottom-width: 1px;
+ border-bottom-style: solid;
+ border-bottom-color: var(--gray-frame);
+}
+
 .blurred-background {
  background-color:var(--basic-dark-grey);
  background-image:url('../img/diffuse.jpg');
  background-repeat:no-repeat;
+    background-size:cover;
  width:1200px;
  min-height:217px;
  margin:0 auto;
@@ -1459,6 +1484,11 @@ input:focus:-ms-input-placeholder {
  border-bottom:none;
 }
 
+		.main-footer {
+			grid-row-start: 2;
+			grid-row-end: 3;
+		}
+
 .page-footer {
  margin:0 auto;
  width:1200px;
@@ -1537,8 +1567,11 @@ input:focus:-ms-input-placeholder {
  display:flex;
  justify-content:space-around;
  align-items:center;
+ flex-wrap:wrap;
  margin:0 auto;
  padding:0;
+   max-width: 500px;
+    min-height: 60px;
 }
 
 .navigation-basement li:nth-child(1),
