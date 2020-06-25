@@ -27,6 +27,10 @@
  --button-dark:#503E33;
 }		
 	
+html {
+ height: 100%;
+}	
+	
 body {
  min-width:1200px; 
  margin:0;
@@ -38,9 +42,6 @@ body {
  color:var(--basic-black);
  text-transform:uppercase;
  background-color:var(--light-gray);
-	/* min-height: 100%;
-     display: grid;
-     grid-template-rows:1fr auto;*/
 }
 
 a {
@@ -53,6 +54,9 @@ img {
 }
 
 .shadow{
+ min-height:100%;
+ display:grid;
+ grid-template-rows: min-content auto min-content;
  box-shadow:0 0 5px;
  width:1200px;
  margin:0 auto;
@@ -60,12 +64,6 @@ img {
 
 .page {
   height:100%;
-}
-
-	.page-body {
-		min-height:100%;
-		display:grid;
-		grid-template-rows: min-content 1fr min-content;
 }
 
 .top-of-page {
@@ -1484,10 +1482,10 @@ input:focus:-ms-input-placeholder {
  border-bottom:none;
 }
 
-		.main-footer {
-			grid-row-start: 2;
-			grid-row-end: 3;
-		}
+.main-footer {
+grid-row-start:3;
+grid-row-end:4;
+}
 
 .page-footer {
  margin:0 auto;
@@ -1495,12 +1493,14 @@ input:focus:-ms-input-placeholder {
 }
 
 .map-sedona {
+ position:relative;
  width:1200px;
  height:594px;
 }
 
 .map-sedona p {
-  margin:0;
+ display:flex;
+ margin:0;
 }
 
 .map-sedona iframe {
@@ -1511,7 +1511,7 @@ input:focus:-ms-input-placeholder {
 .map {
  position:absolute;
  z-index:1;
- top:2170px;
+ bottom:0;
 }
   
 .basement-card {
@@ -1519,9 +1519,9 @@ input:focus:-ms-input-placeholder {
  justify-content:space-between;
  align-items:center;
  flex-wrap:wrap;
- position:absolute;
- top:2642px;
+ position:relative;
  z-index:3;
+ margin-top:-120px;
  background-color:var(--translucent-white);
  width:1200px;
  min-height:120px;
@@ -1570,8 +1570,8 @@ input:focus:-ms-input-placeholder {
  flex-wrap:wrap;
  margin:0 auto;
  padding:0;
-   max-width: 500px;
-    min-height: 60px;
+ max-width: 500px;
+ min-height: 60px;
 }
 
 .navigation-basement li:nth-child(1),
