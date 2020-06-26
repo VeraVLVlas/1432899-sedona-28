@@ -1375,7 +1375,7 @@ img {
 .range-controls .toggle {
   position: absolute;
   top: -8px;
-  background-image: url(../img/filter-button.svg);
+  background-image: url("../img/filter-button.svg");
   background-repeat: no-repeat;
   width: 19px;
   height: 21px;
@@ -1394,7 +1394,7 @@ img {
 .toggle-min:focus,
 .toggle-max:hover,
 .toggle-max:focus {
-  background-image: url(../img/filter-big.svg);
+  background-image: url("../img/filter-big.svg");
   background-repeat: no-repeat;
   width: 23px;
   height: 24px;
