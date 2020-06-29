@@ -26,12 +26,13 @@
   --button-dark: #503E33;
 }
 
-html {
+.page {
   height: 100%;
 }
 
 body {
   min-width: 1200px;
+  height: 100%;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -59,10 +60,6 @@ img {
   box-shadow: 0 0 5px;
   width: 1200px;
   margin: 0 auto;
-}
-
-.page {
-  height: 100%;
 }
 
 .top-of-page {
